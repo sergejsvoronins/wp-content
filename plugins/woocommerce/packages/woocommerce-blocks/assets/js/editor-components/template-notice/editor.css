@@ -1,0 +1,14 @@
+.wc-default-template-notice.is-dismissible {
+  margin: 0;
+  padding-right: 16px;
+}
+.wc-default-template-notice.is-dismissible .components-notice__dismiss {
+  min-width: 24px;
+}
+.wc-default-template-notice.is-dismissible .components-notice__content {
+  margin: 4px 0;
+}
+.wc-default-template-notice.is-dismissible svg {
+  width: 16px;
+  height: 16px;
+}/*# sourceMappingURL=editor.css.map */
