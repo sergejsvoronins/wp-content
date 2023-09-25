@@ -1,0 +1,39 @@
+2023-09-19T07:18:09+00:00 CRITICAL Uncaught Error: Call to undefined function modern_ecommerce_fonts_url() in C:\xampp\htdocs\wordpress\wp-content\themes\storefront-ecommerce-shop\functions.php:61
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): storefront_ecommerce_shop_setup('')
+#1 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wordpress\wp-settings.php(610): do_action('after_setup_the...')
+#4 C:\xampp\htdocs\wordpress\wp-config.php(97): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\wp-admin\admin.php(34): require_once('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\wordpress\wp-admin\themes.php(10): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\themes\storefront-ecommerce-shop\functions.php on line 61
+
+2023-09-19T07:18:30+00:00 CRITICAL Uncaught Error: Call to undefined function modern_ecommerce_fonts_url() in C:\xampp\htdocs\wordpress\wp-content\themes\storefront-ecommerce-shop\functions.php:61
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): storefront_ecommerce_shop_setup('')
+#1 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wordpress\wp-settings.php(610): do_action('after_setup_the...')
+#4 C:\xampp\htdocs\wordpress\wp-config.php(97): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\wp-admin\admin.php(34): require_once('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\wordpress\wp-admin\index.php(10): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\themes\storefront-ecommerce-shop\functions.php on line 61
+
+2023-09-19T07:18:37+00:00 CRITICAL Uncaught Error: Call to undefined function modern_ecommerce_fonts_url() in C:\xampp\htdocs\wordpress\wp-content\themes\storefront-ecommerce-shop\functions.php:61
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): storefront_ecommerce_shop_setup('')
+#1 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wordpress\wp-settings.php(610): do_action('after_setup_the...')
+#4 C:\xampp\htdocs\wordpress\wp-config.php(97): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#8 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\themes\storefront-ecommerce-shop\functions.php on line 61
+
