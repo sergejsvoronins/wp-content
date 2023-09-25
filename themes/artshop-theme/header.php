@@ -12,11 +12,12 @@
 <body>
     <header>
         <nav>
+            <h1>
+                <?php bloginfo("name"); ?>
+            </h1>
             <?php wp_nav_menu("primary_menu"); ?>
             <?php get_search_form(); ?>
         </nav>
-        <h1>
-            <?php bloginfo("name"); ?>
-        </h1>
+
     </header>
     <main>
