@@ -13,14 +13,7 @@
 
 <body>
     <header>
-        <h1>
-            <?php bloginfo("name"); ?>
-        </h1>
-        <nav>
-            <i class="fa-solid fa-bars menu-icon"></i>
-            <?php wp_nav_menu(array('primary-nav')); ?>
-        </nav>
-        <?php get_search_form(); ?>
+    <?php get_template_part("includes/section", "navigation") ?>
 
     </header>
     <main>
