@@ -13,6 +13,9 @@
 
 <body>
     <header>
+    <h1>
+        <?php bloginfo("name"); ?>
+    </h1>
     <?php get_template_part("includes/section", "navigation") ?>
 
     </header>
