@@ -1,15 +1,20 @@
-/* 
-Theme Name: Shop Theme
-Author: Henrietta, Sergejs
-Author URI: https://wordpress.org/
-Description: Shop Theme is a blank canvas for your ideas and it makes the block editor your best brush. With new block patterns, which allow you to create a beautiful layout in a matter of seconds, this theme’s soft colors and eye-catching — yet timeless — design will let your work shine. Take it for a spin! See how Twenty Twenty-One elevates your portfolio, business website, or personal blog.
-License: admin
-Version: 1.0
- */
+body {
+  background-color: #f4dddd;
+  font-family: "Consolas";
+  color: rgb(151, 93, 155);
+}
 
-
- body {
-    background-color: #f4dddd;
-    font-family: 'Consolas';
-    color: rgb(151, 93, 155);  
- }
+nav .menu-primary-nav-container {
+  position: relative;
+  z-index: 100;
+}
+nav .menu-primary-nav-container .menu {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  transition: all 0.6s linear;
+}
+nav .menu-primary-nav-container .show {
+  transition: all 0.4s linear;
+  left: 0;
+}/*# sourceMappingURL=style.css.map */

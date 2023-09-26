@@ -1,3 +1,22 @@
 body {
-    background-color: yellow;
+    background-color: #f4dddd;
+    font-family: 'Consolas';
+    color: rgb(151, 93, 155);  
+}
+
+nav {
+    .menu-primary-nav-container {
+        position: relative;
+        z-index: 100;
+        .menu {
+            position: absolute;
+            top: 0;
+            left: -100%;
+            transition: all .6s linear; 
+        }
+        .show {
+            transition: all .4s linear; 
+            left: 0;
+        }
+    }
 }
