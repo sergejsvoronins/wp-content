@@ -77,7 +77,7 @@ function theme_register_widget_areas()
         array(
             'name' => 'Orientering',
             'id' => 'orientation',
-            'description' => 'Dethär är sidomenyn för kategori, författare och arkvinsidan.',
+            'description' => 'Dethär är sidomenyn för kategori, författare och arkivinsidan.',
             'before_widget' => '<div class="widget">',
             'after_widget' => '</div>',
             'before_title' => '<h2 class="widget-title">',
