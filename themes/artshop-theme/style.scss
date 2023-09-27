@@ -4,6 +4,10 @@
         @content;
     }
 }
+* {
+    padding: 0;
+    margin: 0;
+}
 body {
     background-color: #f4dddd;
     font-family: 'Consolas';
@@ -11,7 +15,6 @@ body {
     position: relative;
     height: 100vh;
     padding: 30px;
-    margin: 0;
 }
 header {
     display: flex;
@@ -51,6 +54,7 @@ header {
                 position: static;
                 width: 60%;
                 height: auto;
+                padding: 0;
             }
             ul {
                 display: flex;
