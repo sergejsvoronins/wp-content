@@ -23,7 +23,7 @@ register_nav_menus(array(
         "theme_location" => "Huvudmeny",
         "menu_class" => "my-primary-menu",
     ),
-    "sub_menu" => "Undermeny", 
+    "sub_menu" => "Undermeny",
     "footer_menu" => "Footermeny"
 ));
 
@@ -44,6 +44,7 @@ add_theme_support(
 add_theme_support('responsive-embeds');
 add_theme_support('post-thumbnails');
 add_theme_support('widgets');
+add_theme_support('woocommerce');
 add_theme_support(
     'html5',
     array(
@@ -121,5 +122,3 @@ function theme_register_widget_areas()
 add_action('widgets_init', 'theme_register_widget_areas');
 
 add_filter('show_admin_bar', '__return_false');
-
-
