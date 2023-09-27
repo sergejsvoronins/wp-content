@@ -26,7 +26,7 @@ header nav {
   flex-wrap: wrap;
   gap: 20px;
 }
-header nav .menu-primary-nav-container {
+header nav .main-menu {
   background-color: #f4dddd;
   position: absolute;
   top: 0;
@@ -38,24 +38,24 @@ header nav .menu-primary-nav-container {
   padding: 30px;
 }
 @media screen and (min-width: 1200px) {
-  header nav .menu-primary-nav-container {
+  header nav .main-menu {
     position: static;
     width: 60%;
     height: auto;
     padding: 0;
   }
 }
-header nav .menu-primary-nav-container ul {
+header nav .main-menu ul {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 @media screen and (min-width: 1200px) {
-  header nav .menu-primary-nav-container ul {
+  header nav .main-menu ul {
     flex-direction: row;
   }
 }
-header nav .menu-primary-nav-container ul li {
+header nav .main-menu ul li {
   list-style: none;
 }
 header nav .show {
