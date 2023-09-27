@@ -5,11 +5,13 @@ function load_css()
     wp_enqueue_style('css');
 }
 add_action('wp_enqueue_scripts', 'load_css');
-// function load_js()
-// {
-//     wp_enqueue_script( 'js', get_template_directory_uri() . '/main.js', array(), '1.0.0', true );
-// }
-// add_action('wp_enqueue_scripts', 'load_js');
+
+function load_js()
+{
+    wp_register_script('js', get_template_directory_uri() . '/main.js', array(), '1.0.0', true);
+    wp_enqueue_script('js');
+}
+add_action('wp_enqueue_scripts', 'load_js');
 
 // register_nav_menus(array(
 //     "primary_menu" => "Huvudmeny", 
