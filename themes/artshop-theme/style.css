@@ -149,6 +149,20 @@ header .search-form .search-submit {
   }
 }
 
+.footer-wrapper {
+  width: 100%;
+  margin-top: 1em;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(222, 234, 234);
+}
+.footer-wrapper__box {
+  text-align: center;
+  padding: 2em;
+}
+
 .content-container {
   width: 100%;
   height: auto;
