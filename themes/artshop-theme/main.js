@@ -1,6 +1,6 @@
 
 
-    let navigation = document.querySelector(".menu-primary-nav-container");
+    let navigation = document.querySelector(".main-menu");
     let navIcon = document.querySelector(".menu-icon");
     let closeIcon = document.querySelector(".close-icon");
     let navWrapper = document.querySelector(".nav-wrapper");

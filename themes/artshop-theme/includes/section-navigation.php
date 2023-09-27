@@ -5,7 +5,9 @@
     <!-- <h1>
         <?php bloginfo("name"); ?>
     </h1> -->
-    <?php wp_nav_menu(array('primary-nav')); ?>
+    <div class="main-menu">
+        <?php wp_nav_menu(array('primary-nav')); ?>
+    </div>
     <div class="nav-wrapper">
         <div class="close-icon">
             <i class="fa-solid fa-xmark "></i>

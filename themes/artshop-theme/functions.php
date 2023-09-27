@@ -11,7 +11,19 @@ add_action('wp_enqueue_scripts', 'load_css');
 // }
 // add_action('wp_enqueue_scripts', 'load_js');
 
-register_nav_menus(array("primary_menu" => "Huvudmeny", "sub_menu" => "Undermeny", "footer_menu" => "Footermeny"));
+// register_nav_menus(array(
+//     "primary_menu" => "Huvudmeny", 
+//     "sub_menu" => "Undermeny", 
+//     "footer_menu" => "Footermeny"
+// ));
+register_nav_menus(array(
+    "primary_menu" => array(
+        "theme_location" => "Huvudmeny",
+        "menu_class" => "my-primary-menu",
+    ),
+    "sub_menu" => "Undermeny", 
+    "footer_menu" => "Footermeny"
+));
 
 add_theme_support(
     'post-formats',
@@ -107,3 +119,11 @@ function theme_register_widget_areas()
 add_action('widgets_init', 'theme_register_widget_areas');
 
 add_filter('show_admin_bar', '__return_false');
+
+add_filter( 'nav_menu_link_attributes', 'nav_menu_link_class', 10, 3 );
+function nav_menu_link_class( $atts, $item, $args ) {
+    $class         = 'has-ripple';
+    $atts['class'] = $class;
+
+    return $atts;
+}
