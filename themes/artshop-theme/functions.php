@@ -122,10 +122,4 @@ add_action('widgets_init', 'theme_register_widget_areas');
 
 add_filter('show_admin_bar', '__return_false');
 
-add_filter( 'nav_menu_link_attributes', 'nav_menu_link_class', 10, 3 );
-function nav_menu_link_class( $atts, $item, $args ) {
-    $class         = 'has-ripple';
-    $atts['class'] = $class;
 
-    return $atts;
-}
