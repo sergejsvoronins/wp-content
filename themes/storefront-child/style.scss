@@ -13,8 +13,10 @@ Version: 4.5.2
 */
 
 body{
-    height: 100vh;
-    width: 100%;
+    height: 100%;
+    width: 100vw;
+    background-color: rgb(255, 251, 252);
+    
     .site-header{
         position: relative;
     .img-icon{
@@ -25,40 +27,57 @@ body{
         right: 30%;
         opacity: 0.5;
     }
+    .img-header{
+        position: absolute;
+        left: 18%;
+        top:-18px;
+        width:30%;
+        height:80%;
+    }
+
     }
     footer{
         width: 100%;
-        height: auto;
-        margin: 0;
+        height: 100%;
+        margin-top:10%;
+       
 
         .footer-wrapper{
             position: relative;
+            padding-top: 3em;
+            height: 100%;
+                div{
+                    position: absolute;
+                    width:15%;
+                    margin:2em;
+                    padding: 2em;
+                    right:240px;
+                    bottom: 700px;
 
-            &__icon{
-                position: absolute;
-                width:15%;
-                height: auto;
-                margin:2em;
-                padding: 2em;
-                    &__l{
-                        position: absolute;
-                width:15%;
-                height: auto;
-                margin:2em;
-                padding: 2em;
-                    bottom:40%;
-                    right:20%;
+                &__icon{
+                    position: absolute;
+                    width:50%;
+                    margin:2em;
+                    padding: 2em;
+                        &__l{
+                            position: absolute;
+                            width:15%;
+                            height: auto;
+                            margin:2em;
+                            padding: 2em;
+                            // bottom:600px;
+                            // right:200px;
                     }
 
                     &__a{
                         position: absolute;
-                width:15%;
-                height: auto;
-                margin:2em;
-                padding: 2em;
-                        bottom:52%;
-                        right: 25.8%;
+                        width:15%;
+                        height: auto;
+                        margin:2em;
+                        padding: 2em;
+                        right: -20px;
                     }
+                }
 
             }
         }

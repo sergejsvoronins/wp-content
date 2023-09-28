@@ -4,10 +4,10 @@
 <footer id="footer" role="contentinfo">
 
     <section class="footer-wrapper">
-        <div>
+        <!-- <div>
             <img class="footer-wrapper__icon__a" src="<?php get_template_directory_uri() ?>/e-commerce/wp-content/themes/storefront-child/assets/poppy-stained.svg" alt="Geometrisk form">
             <img class="footer-wrapper__icon__l" src="<?php get_template_directory_uri() ?>/e-commerce/wp-content/themes/storefront-child/assets/ladder.svg" alt="Geometrisk form">
-        </div>
+        </div> -->
         <article class="footer-wrapper__box">
             <h4>Kort om oss</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed sodales mauris. Aliquam felis est, efficitur vel fringilla quis, vehicula quis ex.</p>

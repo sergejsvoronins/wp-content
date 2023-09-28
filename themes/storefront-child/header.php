@@ -16,15 +16,17 @@
 
     <?php do_action('storefront_before_site'); ?>
 
+
     <div id="page" class="hfeed site">
         <?php do_action('storefront_before_header'); ?>
 
         <header id="masthead" class="site-header" role="banner" style="<?php storefront_header_styles(); ?>">
+            <img class="img-header" src="<?php get_template_directory_uri() ?>/e-commerce/wp-content/themes/storefront-child/assets/kvist.svg" alt="Geometrisk form">
 
             <?php
             do_action('storefront_header');
             ?>
-            <img class="img-icon" src="<?php get_template_directory_uri() ?>/e-commerce/wp-content/themes/storefront-child/assets/starstringartanimated.svg" alt="Geometrisk form">
+            <img class="img-icon" src="<?php get_template_directory_uri() ?>/e-commerce/wp-content/themes/storefront-child/assets/sun.svg" alt="Geometrisk form">
         </header><!-- #masthead -->
 
         <?php
@@ -36,3 +38,5 @@
 
                 <?php
                 do_action('storefront_content_top');
+                ?>
+                <main>
