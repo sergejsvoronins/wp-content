@@ -6,7 +6,26 @@ function load_css()
 }
 add_action('wp_enqueue_scripts', 'load_css');
 
-register_nav_menus(array("primary_menu" => "Huvudmeny", "sub_menu" => "Undermeny", "footer_menu" => "Footermeny"));
+function load_js()
+{
+    wp_register_script('js', get_template_directory_uri() . '/main.js', array(), '1.0.0', true);
+    wp_enqueue_script('js');
+}
+add_action('wp_enqueue_scripts', 'load_js');
+
+// register_nav_menus(array(
+//     "primary_menu" => "Huvudmeny", 
+//     "sub_menu" => "Undermeny", 
+//     "footer_menu" => "Footermeny"
+// ));
+register_nav_menus(array(
+    "primary_menu" => array(
+        "theme_location" => "Huvudmeny",
+        "menu_class" => "my-primary-menu",
+    ),
+    "sub_menu" => "Undermeny",
+    "footer_menu" => "Footermeny"
+));
 
 add_theme_support(
     'post-formats',
@@ -25,6 +44,7 @@ add_theme_support(
 add_theme_support('responsive-embeds');
 add_theme_support('post-thumbnails');
 add_theme_support('widgets');
+add_theme_support('woocommerce');
 add_theme_support(
     'html5',
     array(
@@ -77,7 +97,7 @@ function theme_register_widget_areas()
         array(
             'name' => 'Orientering',
             'id' => 'orientation',
-            'description' => 'Dethär är sidomenyn för kategori, författare och arkvinsidan.',
+            'description' => 'Dethär är sidomenyn för kategori, författare och arkivinsidan.',
             'before_widget' => '<div class="widget">',
             'after_widget' => '</div>',
             'before_title' => '<h2 class="widget-title">',
@@ -100,3 +120,6 @@ function theme_register_widget_areas()
     }
 }
 add_action('widgets_init', 'theme_register_widget_areas');
+
+// add_filter('show_admin_bar', '__return_false');
+
