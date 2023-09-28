@@ -1,9 +1,15 @@
 /*
+
 Theme Name:   Artshop
+
 Description:  Storefront child theme
+
 Author:       Henrietta & Sergejs
+
 Template:     Storefront
+
 Version: 4.5.2
+
 */
 .storefront-breadcrumb {
   display: none;
@@ -33,4 +39,9 @@ Version: 4.5.2
   top: 0;
   right: 0;
   background-color: #fff;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
