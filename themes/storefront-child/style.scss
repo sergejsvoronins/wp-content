@@ -1,0 +1,66 @@
+/*
+
+Theme Name:   Artshop
+
+Description:  Storefront child theme
+
+Author:       Henrietta & Sergejs
+
+Template:     Storefront
+
+Version: 4.5.2
+
+*/
+
+body{
+    height: 100vh;
+    width: 100%;
+    .site-header{
+        position: relative;
+    .img-icon{
+        width:7%;
+        height: auto;
+        position:absolute;
+        top: 150px;
+        right: 30%;
+        opacity: 0.5;
+    }
+    }
+    footer{
+        width: 100%;
+        height: auto;
+        margin: 0;
+
+        .footer-wrapper{
+            position: relative;
+
+            &__icon{
+                position: absolute;
+                width:15%;
+                height: auto;
+                margin:2em;
+                padding: 2em;
+                    &__l{
+                        position: absolute;
+                width:15%;
+                height: auto;
+                margin:2em;
+                padding: 2em;
+                    bottom:40%;
+                    right:20%;
+                    }
+
+                    &__a{
+                        position: absolute;
+                width:15%;
+                height: auto;
+                margin:2em;
+                padding: 2em;
+                        bottom:52%;
+                        right: 25.8%;
+                    }
+
+            }
+        }
+    }
+}

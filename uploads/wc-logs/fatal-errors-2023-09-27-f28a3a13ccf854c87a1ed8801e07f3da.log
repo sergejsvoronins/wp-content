@@ -1,0 +1,16 @@
+2023-09-27T13:14:48+00:00 CRITICAL Uncaught Error: Class "WC_Block_Single_Product" not found in C:\xampp\htdocs\wordpress-artshop\wp-content\themes\artshop-theme\woocommerce\single-product.php:7
+Stack trace:
+#0 C:\xampp\htdocs\wordpress-artshop\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\wordpress-artshop\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress-artshop\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\wordpress-artshop\wp-content\themes\artshop-theme\woocommerce\single-product.php on line 7
+
+2023-09-27T13:46:08+00:00 CRITICAL Uncaught Error: Call to undefined function get_block_theme_template_part() in C:\xampp\htdocs\wordpress-artshop\wp-content\themes\artshop-theme\woocommerce\single-product.php:23
+Stack trace:
+#0 C:\xampp\htdocs\wordpress-artshop\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\wordpress-artshop\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress-artshop\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\wordpress-artshop\wp-content\themes\artshop-theme\woocommerce\single-product.php on line 23
+
