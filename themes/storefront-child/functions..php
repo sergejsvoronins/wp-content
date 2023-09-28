@@ -101,4 +101,20 @@ function theme_register_widget_areas()
     }
 }
 add_action('widgets_init', 'theme_register_widget_areas');
+
+// Change add to cart text on single product page
+add_filter( 'woocommerce_product_single_add_to_cart_text', 'woocommerce_add_to_cart_button_text_single' ); 
+function woocommerce_add_to_cart_button_text_single() {
+    return __( 'Lägg till', 'woocommerce' ); 
+}
+
+// Change add to cart text on product archives page
+add_filter( 'woocommerce_product_add_to_cart_text', 'woocommerce_add_to_cart_button_text_archives' );  
+function woocommerce_add_to_cart_button_text_archives() {
+    return __( 'Lägg till', 'woocommerce' );
+}
+add_filter( 'woocommerce_product_result_count', 'woocommerce_result_count' );  
+function woocommerce_result_count() {
+    return __( 'Blablba', 'woocommerce' );
+}
 ?>
