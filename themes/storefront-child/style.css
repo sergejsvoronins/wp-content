@@ -76,22 +76,26 @@ Version: 4.5.2
   display: none;
 }
 
+.site-header {
+  margin-bottom: 30px;
+}
+
 .site-main div:nth-child(4) {
   display: none;
 }
-.site-main .products .product {
+body .site-main .products .product {
   height: 400px;
 }
-.site-main .products .product a:nth-child(1) {
+body .site-main .products .product a:nth-child(1) {
   height: 90%;
   position: relative;
   padding: 1rem;
 }
-.site-main .products .product a:nth-child(1) img {
+body .site-main .products .product a:nth-child(1) img {
   height: 250px;
   padding: 1rem;
 }
-.site-main .products .product a:nth-child(1) .onsale {
+body .site-main .products .product a:nth-child(1) .onsale {
   position: absolute;
   top: 0;
   right: 0;
@@ -106,7 +110,7 @@ body {
 body .site-header {
   position: relative;
 }
-body .site-header .img-icon {
+.site-header .img-icon {
   width: 7%;
   height: auto;
   position: absolute;
@@ -114,49 +118,10 @@ body .site-header .img-icon {
   right: 30%;
   opacity: 0.5;
 }
-body .site-header .img-header {
+.site-header .img-header {
   position: absolute;
   left: 18%;
   top: -18px;
   width: 30%;
   height: 80%;
-}
-body footer {
-  width: 100%;
-  height: 100%;
-  margin-top: 10%;
-}
-body footer .footer-wrapper {
-  position: relative;
-  padding-top: 3em;
-  height: 100%;
-}
-body footer .footer-wrapper div {
-  position: absolute;
-  width: 15%;
-  margin: 2em;
-  padding: 2em;
-  right: 240px;
-  bottom: 700px;
-}
-body footer .footer-wrapper div__icon {
-  position: absolute;
-  width: 50%;
-  margin: 2em;
-  padding: 2em;
-}
-body footer .footer-wrapper div__icon__l {
-  position: absolute;
-  width: 15%;
-  height: auto;
-  margin: 2em;
-  padding: 2em;
-}
-body footer .footer-wrapper div__icon__a {
-  position: absolute;
-  width: 15%;
-  height: auto;
-  margin: 2em;
-  padding: 2em;
-  right: -20px;
 }/*# sourceMappingURL=style.css.map */
