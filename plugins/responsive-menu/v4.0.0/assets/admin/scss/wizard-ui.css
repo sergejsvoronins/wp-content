@@ -1,0 +1,446 @@
+/**
+* This is style file for all wizards.
+* @package responsive_menu_pro
+*/
+.rmp-dialog-overlay {
+  font-family: Product Sans;
+}
+.rmp-dialog-overlay .rmp-menu-section {
+  display: none;
+}
+.rmp-dialog-overlay .rmp-menu-section.current {
+  display: block;
+}
+.rmp-dialog-overlay .rmp-dialog-backdrop {
+  position: fixed;
+  left: -20px;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(13, 19, 61, 0.5098039216);
+  z-index: 999999;
+}
+.rmp-dialog-overlay .rmp-dialog-wrap {
+  clear: both;
+  position: absolute;
+  top: 10%;
+  left: 0;
+  right: 0;
+  bottom: 3%;
+  background: #fff;
+  box-shadow: 0 1px 20px 5px rgba(0, 0, 0, 0.1);
+  z-index: 999999;
+  box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.rmp-dialog-overlay .rmp-dialog-wrap .rmp-dialog-contents {
+  max-height: 580px;
+  overflow-y: overlay;
+}
+.rmp-dialog-overlay .rmp-dialog-header {
+  height: 4rem;
+  border-bottom: 1px solid #eee;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.1607843137);
+}
+.rmp-dialog-overlay .rmp-dialog-header .title {
+  font-size: 1rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  padding-left: 1.25rem;
+  text-transform: capitalize;
+  font-family: Product Sans Medium;
+  color: #7e7e7e;
+}
+.rmp-dialog-overlay .rmp-dialog-header .close {
+  cursor: pointer;
+  font-size: 1.875rem;
+  width: 4rem;
+  color: #ccd0d4;
+  height: 4rem;
+  border: 0;
+  background-color: transparent;
+  border-left: 1px solid #ccd0d4;
+}
+.rmp-dialog-overlay .rmp-dialog-footer {
+  position: relative;
+  text-align: right;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0.625rem 1.25rem;
+  box-sizing: border-box;
+  height: 4rem;
+  box-shadow: 0 -1px 2px 0 rgba(0, 0, 0, 0.1607843137);
+}
+.rmp-dialog-overlay .rmp-theme-title .item-controls {
+  top: unset;
+}
+@media only screen and (min-width: 1170px) {
+  .rmp-dialog-overlay .rmp-dialog-wrap {
+    width: 1170px;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 780px) {
+  .rmp-dialog-overlay .rmp-dialog-wrap,
+  .rmp-dialog-overlay .rmp-dialog-overlay .rmp-dialog-wrap {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: none;
+    z-index: 999999;
+    position: absolute;
+  }
+}
+.rmp-dialog-overlay a {
+  text-decoration: none;
+}
+.rmp-dialog-overlay a:focus {
+  border: 0;
+  outline: unset;
+  box-shadow: unset;
+}
+
+#rmp-new-menu-wizard .rmp-page-loader {
+  background-color: rgba(255, 255, 255, 0.5019607843);
+  height: auto;
+  top: 64px;
+  bottom: 0px;
+}
+#rmp-new-menu-wizard .rmp-page-loader .rmp-loader-message {
+  font-style: initial;
+  font-size: 14px;
+  text-align: center;
+  font-weight: 600;
+}
+#rmp-new-menu-wizard .rmp-theme-use,
+#rmp-new-menu-wizard .rmp-theme-apply {
+  padding: 4px 12px;
+  border: solid 1px #c8c8c8;
+  border-radius: 5px;
+  color: #9d9d9d;
+  letter-spacing: 0.14px;
+}
+#rmp-new-menu-wizard .input-group {
+  margin-bottom: 8px;
+  padding: 20px 30px;
+  display: flex;
+  align-items: center;
+  padding: 1.4rem 2rem;
+  box-shadow: 0 0px 4px 0 rgba(0, 0, 0, 0.1);
+  border: solid 1px #dedcdc;
+  background-color: #f6f6f6;
+}
+#rmp-new-menu-wizard .input-group .input-label {
+  width: 35%;
+}
+#rmp-new-menu-wizard .input-group .input-control {
+  width: 65%;
+}
+#rmp-new-menu-wizard .input-label-title {
+  font-family: "PRODUCT SANS MEDIUM";
+  font-size: 1rem;
+  font-weight: normal;
+  letter-spacing: 0.16px;
+  color: #303030;
+  margin-bottom: 0.375rem;
+}
+#rmp-new-menu-wizard .input-label-description {
+  font-family: "PRODUCT SANS";
+  font-size: 0.875rem;
+  line-height: 1.14;
+  letter-spacing: 0.14px;
+  color: #7b7b7b;
+  margin-right: 25%;
+}
+#rmp-new-menu-wizard .input-label-description a {
+  text-decoration: underline;
+  color: #00adf5;
+}
+#rmp-new-menu-wizard .rmp-dialog-contents .rmp-new-menu-elements {
+  padding: 2% 8%;
+}
+#rmp-new-menu-wizard .input-control input[type=text],
+#rmp-new-menu-wizard .input-control select {
+  width: 100%;
+  max-width: 100%;
+  border: 1px solid #ddd;
+  max-width: 34.375rem;
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.16);
+  border: solid 1px #dedcdc;
+  border-radius: 0;
+  height: 42px;
+}
+#rmp-new-menu-wizard .rmp-dialog-wrap {
+  top: 5%;
+  transition: color 0.5s linear;
+}
+#rmp-new-menu-wizard .rmp-dialog-wrap .rmp-dialog-contents {
+  padding: 2% 3%;
+  background: #f1f1f1;
+  min-height: 420px;
+}
+#rmp-new-menu-wizard .rmp-dialog-wrap .nav-tab-wrapper {
+  border: 0;
+}
+#rmp-new-menu-wizard .rmp-dialog-wrap .nav-tab-wrapper .nav-tab {
+  color: #6e6e6e;
+  border: 0;
+  padding: 0;
+  background: unset;
+  margin: 0 2rem 0 0;
+  font-size: 0.875rem;
+  line-height: 1.14;
+  letter-spacing: 0.14px;
+  position: relative;
+  height: 30px;
+  font-weight: 500;
+}
+#rmp-new-menu-wizard .rmp-dialog-wrap .nav-tab-wrapper .ui-tabs-active .nav-tab {
+  color: #0085ba;
+}
+#rmp-new-menu-wizard .rmp-dialog-wrap .rmp-v-divider::after {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 1px;
+  background: #d2d2d2;
+  right: -1rem;
+}
+#rmp-new-menu-wizard .rmp-dialog-wrap .btn-import-theme {
+  width: 5rem;
+  height: 2.1875rem;
+  border-radius: 0.375rem;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  background-color: #23b507;
+  color: #fff;
+  border: unset;
+}
+#rmp-new-menu-wizard .rmp-dialog-wrap .rmp-themes {
+  margin: 20px 0;
+}
+#rmp-new-menu-wizard .rmp-dialog-wrap .rmp-item-card_image {
+  line-height: 0;
+}
+#rmp-new-menu-wizard .rmp-dialog-wrap .rmp-item-card_image img {
+  height: 250px;
+}
+#rmp-new-menu-wizard .rmp-dialog-wrap .rmp-item-card_contents {
+  display: inline;
+}
+#rmp-new-menu-wizard .rmp-dialog-wrap .rmp-item-card-backside {
+  opacity: 0;
+  visibility: hidden;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: calc(100% - 10px);
+  width: calc(100% - 10px);
+  margin: 5px;
+  background: #000;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  text-align: center;
+  transform: translate3d(0%, 50%, 0);
+  transition: all 0.3s ease-in-out;
+}
+#rmp-new-menu-wizard .rmp-item-card_contents h4 {
+  margin: 0 3px 22px 0;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.17;
+  letter-spacing: 0.18px;
+  text-align: center;
+  color: #ffffff;
+}
+#rmp-new-menu-wizard .rmp-item-card {
+  padding: 5px;
+  background: #eaeaea;
+  border: solid 5px #eaeaea;
+  transition: border 0.3s ease-in-out;
+}
+#rmp-new-menu-wizard .rmp-item-card:hover .rmp-item-card-backside {
+  opacity: 1;
+  visibility: visible;
+  transform: translate3d(0, 0, 0);
+}
+#rmp-new-menu-wizard #rmp-theme-upload {
+  background: #36bef7;
+  border: 0.125rem solid #36bef7;
+  font-family: "Product Sans Medium";
+  border-radius: 4px;
+  font-size: 12px;
+}
+#rmp-new-menu-wizard .button {
+  width: 6.5625rem;
+  height: 2.1875rem;
+  border-radius: 0.3125rem;
+  background-color: #f80668;
+  border: unset;
+  color: #fff;
+}
+#rmp-new-menu-wizard .button.btn-blue {
+  background-color: #36bef7;
+}
+#rmp-new-menu-wizard .rmp-theme-option:checked + label {
+  border: solid 5px #0085ba !important;
+}
+#rmp-new-menu-wizard .item-controls .rmp-theme-option:checked + label.rmp-theme-use {
+  background-color: #0085ba;
+  border: solid 1px #0085ba !important;
+  color: #fff;
+}
+#rmp-new-menu-wizard .rmp-new-menu-step-conatiner {
+  margin-right: 12%;
+}
+#rmp-new-menu-wizard .rmp-dialog-header .title span {
+  padding: 0 10px;
+}
+#rmp-new-menu-wizard .rmp-dialog-header .rmp-new-menu-steps {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#rmp-new-menu-wizard .rmp-dialog-header .rmp-new-menu-step {
+  font-size: 1.25rem;
+  padding: 0 15px;
+  height: 4rem;
+  line-height: 4rem;
+  font-size: 20px;
+  color: #000000;
+  cursor: pointer;
+  position: relative;
+}
+#rmp-new-menu-wizard .rmp-dialog-header .rmp-new-menu-step.current::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  background: #f80668;
+  bottom: 0;
+  left: 0;
+}
+#rmp-new-menu-wizard .rmp-theme-upload-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#rmp-new-menu-wizard .rmp-theme-upload-container p {
+  color: #555d66;
+  font-size: 18px;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+#rmp-new-menu-wizard .rmp-theme-upload-container.hide {
+  display: none;
+}
+#rmp-new-menu-wizard .wp-upload-form {
+  background: #fafafa;
+  border: 1px solid #ccd0d4;
+  padding: 30px;
+  margin: 30px auto;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#rmp-new-menu-wizard .rmp-dialog-footer #rmp-menu-next-step,
+#rmp-new-menu-wizard .rmp-dialog-footer #rmp-create-new-menu {
+  width: 130px;
+  font-size: 16px;
+  height: 45px;
+  border: solid 1px #00adf5;
+  background-color: #36bef7;
+  border-radius: unset;
+}
+#rmp-new-menu-wizard .default-item {
+  width: 184px;
+  height: 15.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  border: 5px solid #eaeaea;
+}
+@media only screen and (max-width: 780px) {
+  #rmp-new-menu-wizard .input-group {
+    flex-direction: column;
+  }
+  #rmp-new-menu-wizard .input-group .input-label,
+  #rmp-new-menu-wizard .input-group .input-control {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  #rmp-new-menu-wizard .rmp-dialog-contents .rmp-new-menu-elements {
+    padding: 0;
+  }
+  #rmp-new-menu-wizard .rmp-dialog-overlay .rmp-dialog-contents {
+    flex-direction: column;
+  }
+  #rmp-new-menu-wizard .rmp-dialog-contents .rmp-new-menu-themes {
+    width: 100%;
+    border-right: unset;
+    margin-bottom: 10px;
+  }
+  #rmp-new-menu-wizard .rmp-dialog-contents .rmp-new-menu-elements {
+    width: auto;
+  }
+  #rmp-new-menu-wizard .rmp-menu-icons-dialog .icon-tabs,
+  #rmp-new-menu-wizard .rmp-mega-menu-dialog .icon-tabs {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .rmp-dialog-contents .rmp-new-menu-elements {
+    padding: 0;
+  }
+  .rmp-menu-icons-dialog .icon-tabs,
+  .rmp-mega-menu-dialog .icon-tabs {
+    flex-direction: column;
+  }
+}
+#rmp-new-menu-wizard .rmp_theme_grids,
+.rmp-theme-page .rmp_theme_grids {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.rmp-new-menu-themes .rmp-themes .rmp-theme-option {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  visibility: hidden;
+  display: none;
+}
+
+.rmp-new-menu-themes .rmp-themes .rmp-theme-title {
+  position: relative;
+  background: #fff;
+  padding: 1rem 1rem;
+  line-height: 1.55;
+  font-weight: 500;
+  color: #6e6e6e;
+  font-weight: normal;
+  margin: 0.3125rem 0;
+  border: 1px solid #ddd;
+  font-family: "Product Sans";
+  font-size: 14px;
+  text-transform: capitalize;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}/*# sourceMappingURL=wizard-ui.css.map */
