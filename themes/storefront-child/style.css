@@ -11,18 +11,15 @@ Template:     Storefront
 Version: 4.5.2
 
 */
-body {
-  height: 100%;
-  width: 100vw;
-  background-color: rgb(255, 251, 252);
-}
-body .storefront-breadcrumb {
+.storefront-breadcrumb {
   display: none;
 }
-body .site-header {
+
+.site-header {
   margin-bottom: 30px;
 }
-body .site-main div:nth-child(4) {
+
+.site-main div:nth-child(4) {
   display: none;
 }
 body .site-main .products .product {
