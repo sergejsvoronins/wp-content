@@ -13,11 +13,31 @@
 
 <body>
     <header>
+<<<<<<< HEAD
+        <nav>
+            <h1>
+                <?php bloginfo("name"); ?>
+            </h1>
+            <?php wp_nav_menu("primary_menu"); ?>
+            <?php get_search_form();
+            wp_nav_menu(array(
+                'theme_location' => 'responsive-menu',
+                'menu_id' => 'responsive-menu',
+                'container' => 'div',
+                'container_class' => 'responsive-menu',
+                'menu_class' => 'responsive-menu-list',
+            ));
+            ?>
+
+        </nav>
+=======
         <h1>
             <?php bloginfo("name"); ?>
         </h1>
 
         <?php get_template_part("includes/section", "navigation") ?>
+>>>>>>> develop
+
 
     </header>
     <main>

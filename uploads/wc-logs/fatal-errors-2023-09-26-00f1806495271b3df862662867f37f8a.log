@@ -1,0 +1,6 @@
+2023-09-26T10:11:20+00:00 CRITICAL Allowed memory size of 268435456 bytes exhausted (tried to allocate 8192 bytes) in /Applications/MAMP/htdocs/e-commerce/wp-includes/media.php on line 3931
+
+2023-09-26T11:11:13+00:00 CRITICAL syntax error, unexpected '<', expecting end of file in /Applications/MAMP/htdocs/e-commerce/wp-content/themes/artshop-theme/header.php on line 33
+
+2023-09-26T11:11:20+00:00 CRITICAL syntax error, unexpected '<', expecting end of file in /Applications/MAMP/htdocs/e-commerce/wp-content/themes/artshop-theme/header.php on line 33
+
