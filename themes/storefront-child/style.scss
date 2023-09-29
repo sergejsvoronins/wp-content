@@ -11,12 +11,16 @@ Template:     Storefront
 Version: 4.5.2
 
 */
+
+@import "./scss-partials/mixins";
+@import "./scss-partials/variables";
+@import "./scss-partials/homepage";
+@import "./scss-partials/footer";
+
 .storefront-breadcrumb {
     display: none;
 }
-.site-header {
-    margin-bottom: 30px;
-}
+
 .site-main {
     div:nth-child(4) {
         display: none;

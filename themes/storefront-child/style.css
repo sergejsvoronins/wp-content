@@ -11,12 +11,97 @@ Template:     Storefront
 Version: 4.5.2
 
 */
-.storefront-breadcrumb {
-  display: none;
+.home-page {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 1200px) {
+  .home-page {
+    flex-direction: row;
+  }
+}
+.home-page .hero-image {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  padding: 1rem;
+}
+@media screen and (min-width: 1200px) {
+  .home-page .hero-image {
+    padding: 1rem;
+    width: 50%;
+    justify-content: center;
+  }
+}
+.home-page .hero-image img {
+  width: 100%;
+  -o-object-position: center;
+     object-position: center;
+}
+.home-page .text {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding: 1rem;
+  gap: 1rem;
+}
+@media screen and (min-width: 1200px) {
+  .home-page .text {
+    padding: 1rem;
+    width: 50%;
+  }
+}
+.home-page .text a {
+  display: flex;
+}
+.home-page .text a .home-button {
+  background-color: #eeeeee;
+  border-color: #eeeeee;
+  color: #333333;
+  padding: 1rem 2rem;
+}
+.home-page .text a .home-button:hover {
+  background-color: #bdbdbd;
+  border-color: #bdbdbd;
 }
 
-.site-header {
-  margin-bottom: 30px;
+#footer {
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  margin-top: 3rem;
+}
+#footer .footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 1200px) {
+  #footer .footer-wrapper {
+    flex-direction: row;
+  }
+}
+#footer .footer-wrapper .about, #footer .footer-wrapper .social {
+  width: 100%;
+  margin-right: 5rem;
+}
+@media screen and (min-width: 1200px) {
+  #footer .footer-wrapper .about, #footer .footer-wrapper .social {
+    width: auto;
+  }
+}
+#footer .footer-wrapper .copyrights {
+  width: 100%;
+}
+
+.widget_nav_menu ul li::before {
+  content: "";
+}
+
+.storefront-breadcrumb {
+  display: none;
 }
 
 .site-main div:nth-child(4) {

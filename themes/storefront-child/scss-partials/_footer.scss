@@ -1,0 +1,29 @@
+
+#footer {
+    // background-color: $bg;
+    border-top: 1px solid rgba(0,0,0,.05);
+    margin-top: 3rem;
+    .footer-wrapper {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        flex-wrap: wrap;
+        @include desktop {
+            flex-direction: row;
+        }
+        .about, .social {
+            width: 100%;
+            margin-right: 5rem;
+            @include desktop {
+                width: auto;
+            }
+        }
+        .copyrights {
+            width: 100%;
+        }
+    }
+}
+
+.widget_nav_menu ul li::before {
+    content: "";
+}
