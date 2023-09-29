@@ -2,7 +2,7 @@
 
 
 <footer id="footer" role="contentinfo">
-<section class="footer-wrapper">
+<section class="footer_wrapper">
         <article class="about">
             <?php dynamic_sidebar('footer-4'); ?>
         </article>
