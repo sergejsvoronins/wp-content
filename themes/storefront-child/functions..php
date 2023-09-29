@@ -113,8 +113,9 @@ add_filter( 'woocommerce_product_add_to_cart_text', 'woocommerce_add_to_cart_but
 function woocommerce_add_to_cart_button_text_archives() {
     return __( 'Lägg till', 'woocommerce' );
 }
-add_filter( 'woocommerce_product_result_count', 'woocommerce_result_count' );  
-function woocommerce_result_count() {
-    return __( 'Blablba', 'woocommerce' );
+add_action( 'init', 'remove_storefront_home_product_categories', 10 );
+function remove_storefront_home_product_categories(){
+    // Unhook storefront_product_categories() function from 'homepage' action hook
+    remove_action( 'homepage', 'storefront_product_categories', 20 );
 }
 ?>

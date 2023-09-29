@@ -68,35 +68,6 @@ Version: 4.5.2
   border-color: #bdbdbd;
 }
 
-#footer {
-  border-top: 1px solid rgba(0, 0, 0, 0.05);
-  margin-top: 3rem;
-  padding: 0 2rem;
-}
-#footer .footer_wrapper {
-  display: flex;
-  flex-direction: column;
-  padding: 2rem;
-  flex-wrap: wrap;
-}
-@media screen and (min-width: 1200px) {
-  #footer .footer_wrapper {
-    flex-direction: row;
-  }
-}
-#footer .footer_wrapper .about, #footer .footer_wrapper .social {
-  width: 100%;
-  margin-right: 5rem;
-}
-@media screen and (min-width: 1200px) {
-  #footer .footer_wrapper .about, #footer .footer_wrapper .social {
-    width: auto;
-  }
-}
-#footer .footer_wrapper .copyrights {
-  width: 100%;
-}
-
 .widget_nav_menu ul li::before {
   content: "";
 }
