@@ -24,11 +24,18 @@ get_header();
                     <?php the_sub_field('store_city') ?>
                 </span>
                 <img src="<?php the_sub_field('store_image') ?>">
+
+
             </section>
     <?php
         endwhile;
     endif;
+
     ?>
+    <div>
+        <img src="<?php the_field('poster'); ?>">
+
+    </div>
 
 </section>
 

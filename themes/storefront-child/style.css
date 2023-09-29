@@ -11,40 +11,37 @@ Template:     Storefront
 Version: 4.5.2
 
 */
-.storefront-breadcrumb {
-  display: none;
-}
-
-.site-header {
-  margin-bottom: 30px;
-}
-
-.site-main div:nth-child(4) {
-  display: none;
-}
-.site-main .products .product {
-  height: 400px;
-}
-.site-main .products .product a:nth-child(1) {
-  height: 90%;
-  position: relative;
-  padding: 1rem;
-}
-.site-main .products .product a:nth-child(1) img {
-  height: 250px;
-  padding: 1rem;
-}
-.site-main .products .product a:nth-child(1) .onsale {
-  position: absolute;
-  top: 0;
-  right: 0;
-  background-color: #fff;
-}
-
 body {
   height: 100%;
   width: 100vw;
   background-color: rgb(255, 251, 252);
+}
+body .storefront-breadcrumb {
+  display: none;
+}
+body .site-header {
+  margin-bottom: 30px;
+}
+body .site-main div:nth-child(4) {
+  display: none;
+}
+body .site-main .products .product {
+  height: 400px;
+}
+body .site-main .products .product a:nth-child(1) {
+  height: 90%;
+  position: relative;
+  padding: 1rem;
+}
+body .site-main .products .product a:nth-child(1) img {
+  height: 250px;
+  padding: 1rem;
+}
+body .site-main .products .product a:nth-child(1) .onsale {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #fff;
 }
 body .site-header {
   position: relative;
