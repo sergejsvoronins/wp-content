@@ -26,13 +26,13 @@
             <?php
             do_action('storefront_header');
             ?>
-            <img class="img-icon" src="<?php get_template_directory_uri() ?>/e-commerce/wp-content/themes/storefront-child/assets/sun.svg" alt="Geometrisk form">
-        </header><!-- #masthead -->
+            <!-- <img class="img-icon" src="<?php get_template_directory_uri() ?>/e-commerce/wp-content/themes/storefront-child/assets/sun.svg" alt="Geometrisk form"> -->
 
-        <?php
-        do_action('storefront_before_content');
-        ?>
 
+            <?php
+            do_action('storefront_before_content');
+            ?>
+        </header>
         <div id="content" class="site-content" tabindex="-1">
             <div class="col-full">
 

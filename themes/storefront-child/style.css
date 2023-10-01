@@ -11,15 +11,146 @@ Template:     Storefront
 Version: 4.5.2
 
 */
-.storefront-breadcrumb {
+.home-page {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 1200px) {
+  .home-page {
+    flex-direction: row;
+  }
+}
+.home-page .hero-image {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  padding: 1rem;
+}
+@media screen and (min-width: 1200px) {
+  .home-page .hero-image {
+    padding: 1rem;
+    width: 50%;
+    justify-content: center;
+  }
+}
+.home-page .hero-image img {
+  width: 100%;
+  -o-object-position: center;
+     object-position: center;
+}
+.home-page .text {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding: 1rem;
+  gap: 1rem;
+}
+@media screen and (min-width: 1200px) {
+  .home-page .text {
+    padding: 1rem;
+    width: 50%;
+  }
+}
+.home-page .text a {
+  display: flex;
+}
+.home-page .text a .home-button {
+  background-color: #eeeeee;
+  border-color: #eeeeee;
+  color: #333333;
+  padding: 1rem 2rem;
+}
+.home-page .text a .home-button:hover {
+  background-color: #bdbdbd;
+  border-color: #bdbdbd;
+}
+
+#footer {
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  margin-top: 3rem;
+  padding: 0 2rem;
+}
+#footer .footer_wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 1200px) {
+  #footer .footer_wrapper {
+    flex-direction: row;
+  }
+}
+#footer .footer_wrapper .about, #footer .footer_wrapper .social {
+  width: 100%;
+  margin-right: 5rem;
+}
+@media screen and (min-width: 1200px) {
+  #footer .footer_wrapper .about, #footer .footer_wrapper .social {
+    width: auto;
+  }
+}
+#footer .footer_wrapper .copyrights {
+  width: 100%;
+}
+
+.widget_nav_menu ul li::before {
+  content: "";
+}
+
+section {
+  text-align: center;
+}
+section .store-wrapper {
+  margin: 0;
+  padding: 2em;
+  height: auto;
+  width: 80%;
+  background-color: rgb(240, 245, 245);
+  border: 2px solid orange;
+  border-radius: 7%;
+  display: flex;
+}
+section .store-wrapper article {
+  flex-direction: row;
+}
+section .store-wrapper img {
+  width: 30%;
+  height: auto;
+}
+
+body .site-header {
+  position: relative;
+  height: 50%;
+  width: 100%;
+}
+body .site-header .img-icon {
+  width: 7%;
+  height: auto;
+  position: absolute;
+  top: 150px;
+  right: 30%;
+  opacity: 0.5;
+}
+body .site-header .img-header {
+  position: absolute;
+  left: 18%;
+  top: -18px;
+  width: 30%;
+  height: 80%;
+}
+body .storefront-breadcrumb {
   display: none;
 }
-
-.site-header {
-  margin-bottom: 30px;
+body .site-main {
+  height: 100%;
+  width: 100vw;
+  background-color: rgb(255, 251, 252);
 }
-
-.site-main div:nth-child(4) {
+body .site-main div:nth-child(4) {
   display: none;
 }
 body .site-main .products .product {
@@ -40,35 +171,17 @@ body .site-main .products .product a:nth-child(1) .onsale {
   right: 0;
   background-color: #fff;
 }
-body .site-header {
-  position: relative;
-}
-body .site-header .img-icon {
-  width: 7%;
-  height: auto;
-  position: absolute;
-  top: 150px;
-  right: 30%;
-  opacity: 0.5;
-}
-body .site-header .img-header {
-  position: absolute;
-  left: 18%;
-  top: -18px;
-  width: 30%;
-  height: 80%;
-}
-body footer {
+body .site-main footer {
   width: 100%;
   height: 100%;
   margin-top: 10%;
 }
-body footer .footer-wrapper {
+body .site-main footer .footer-wrapper {
   position: relative;
   padding-top: 3em;
   height: 100%;
 }
-body footer .footer-wrapper div {
+body .site-main footer .footer-wrapper div {
   position: absolute;
   width: 15%;
   margin: 2em;
@@ -76,20 +189,20 @@ body footer .footer-wrapper div {
   right: 240px;
   bottom: 700px;
 }
-body footer .footer-wrapper div__icon {
+body .site-main footer .footer-wrapper div__icon {
   position: absolute;
   width: 50%;
   margin: 2em;
   padding: 2em;
 }
-body footer .footer-wrapper div__icon__l {
+body .site-main footer .footer-wrapper div__icon__l {
   position: absolute;
   width: 15%;
   height: auto;
   margin: 2em;
   padding: 2em;
 }
-body footer .footer-wrapper div__icon__a {
+body .site-main footer .footer-wrapper div__icon__a {
   position: absolute;
   width: 15%;
   height: auto;
