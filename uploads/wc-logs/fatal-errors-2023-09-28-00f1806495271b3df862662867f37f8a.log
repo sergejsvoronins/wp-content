@@ -1,0 +1,44 @@
+2023-09-28T21:56:17+00:00 CRITICAL Uncaught Error: Object of class WP_Post could not be converted to string in /Applications/MAMP/htdocs/e-commerce/wp-content/plugins/advanced-custom-fields-pro-edu/includes/api/api-template.php:89
+Stack trace:
+#0 /Applications/MAMP/htdocs/e-commerce/wp-content/themes/storefront-child/header.php(43): the_field('poster')
+#1 /Applications/MAMP/htdocs/e-commerce/wp-includes/template.php(785): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/e-commerce/wp-includes/template.php(720): load_template('/Applications/M...', true, Array)
+#3 /Applications/MAMP/htdocs/e-commerce/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#4 /Applications/MAMP/htdocs/e-commerce/wp-content/themes/Storefront/page.php(13): get_header()
+#5 /Applications/MAMP/htdocs/e-commerce/wp-includes/template-loader.php(106): include('/Applications/M...')
+#6 /Applications/MAMP/htdocs/e-commerce/wp-blog-header.php(19): require_once('/Applications/M...')
+#7 /Applications/MAMP/htdocs/e-commerce/index.php(17):  in /Applications/MAMP/htdocs/e-commerce/wp-content/plugins/advanced-custom-fields-pro-edu/includes/api/api-template.php on line 89
+
+2023-09-28T21:56:42+00:00 CRITICAL Uncaught Error: Object of class WP_Post could not be converted to string in /Applications/MAMP/htdocs/e-commerce/wp-content/plugins/advanced-custom-fields-pro-edu/includes/api/api-template.php:89
+Stack trace:
+#0 /Applications/MAMP/htdocs/e-commerce/wp-content/themes/storefront-child/header.php(43): the_field('poster')
+#1 /Applications/MAMP/htdocs/e-commerce/wp-includes/template.php(785): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/e-commerce/wp-includes/template.php(720): load_template('/Applications/M...', true, Array)
+#3 /Applications/MAMP/htdocs/e-commerce/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#4 /Applications/MAMP/htdocs/e-commerce/wp-content/themes/Storefront/page.php(13): get_header()
+#5 /Applications/MAMP/htdocs/e-commerce/wp-includes/template-loader.php(106): include('/Applications/M...')
+#6 /Applications/MAMP/htdocs/e-commerce/wp-blog-header.php(19): require_once('/Applications/M...')
+#7 /Applications/MAMP/htdocs/e-commerce/index.php(17):  in /Applications/MAMP/htdocs/e-commerce/wp-content/plugins/advanced-custom-fields-pro-edu/includes/api/api-template.php on line 89
+
+2023-09-28T21:56:58+00:00 CRITICAL Uncaught Error: Object of class WP_Post could not be converted to string in /Applications/MAMP/htdocs/e-commerce/wp-content/plugins/advanced-custom-fields-pro-edu/includes/api/api-template.php:89
+Stack trace:
+#0 /Applications/MAMP/htdocs/e-commerce/wp-content/themes/storefront-child/header.php(43): the_field('poster')
+#1 /Applications/MAMP/htdocs/e-commerce/wp-includes/template.php(785): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/e-commerce/wp-includes/template.php(720): load_template('/Applications/M...', true, Array)
+#3 /Applications/MAMP/htdocs/e-commerce/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#4 /Applications/MAMP/htdocs/e-commerce/wp-content/themes/Storefront/page.php(13): get_header()
+#5 /Applications/MAMP/htdocs/e-commerce/wp-includes/template-loader.php(106): include('/Applications/M...')
+#6 /Applications/MAMP/htdocs/e-commerce/wp-blog-header.php(19): require_once('/Applications/M...')
+#7 /Applications/MAMP/htdocs/e-commerce/index.php(17):  in /Applications/MAMP/htdocs/e-commerce/wp-content/plugins/advanced-custom-fields-pro-edu/includes/api/api-template.php on line 89
+
+2023-09-28T21:58:29+00:00 CRITICAL Uncaught Error: Object of class WP_Post could not be converted to string in /Applications/MAMP/htdocs/e-commerce/wp-content/plugins/advanced-custom-fields-pro-edu/includes/api/api-template.php:89
+Stack trace:
+#0 /Applications/MAMP/htdocs/e-commerce/wp-content/themes/storefront-child/header.php(43): the_field('poster')
+#1 /Applications/MAMP/htdocs/e-commerce/wp-includes/template.php(785): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/e-commerce/wp-includes/template.php(720): load_template('/Applications/M...', true, Array)
+#3 /Applications/MAMP/htdocs/e-commerce/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#4 /Applications/MAMP/htdocs/e-commerce/wp-content/themes/Storefront/page.php(13): get_header()
+#5 /Applications/MAMP/htdocs/e-commerce/wp-includes/template-loader.php(106): include('/Applications/M...')
+#6 /Applications/MAMP/htdocs/e-commerce/wp-blog-header.php(19): require_once('/Applications/M...')
+#7 /Applications/MAMP/htdocs/e-commerce/index.php(17):  in /Applications/MAMP/htdocs/e-commerce/wp-content/plugins/advanced-custom-fields-pro-edu/includes/api/api-template.php on line 89
+

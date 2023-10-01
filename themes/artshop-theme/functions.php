@@ -121,5 +121,26 @@ function theme_register_widget_areas()
 }
 add_action('widgets_init', 'theme_register_widget_areas');
 
+<<<<<<< HEAD
+function register_my_menu()
+{
+    register_nav_menu('responsive-menu', __('Responsive Menu'));
+}
+add_action('after_setup_theme', 'register_my_menu');
+
+// Anpassa menyns utseende
+function customize_responsive_menu($args)
+{
+    if ($args['theme_location'] === 'responsive-menu') {
+        $args['menu_id'] = 'responsive-menu';
+        $args['container'] = 'div';
+        $args['container_class'] = 'responsive-menu';
+        $args['menu_class'] = 'responsive-menu-list';
+    }
+    return $args;
+}
+add_filter('wp_nav_menu_args', 'customize_responsive_menu');
+=======
 // add_filter('show_admin_bar', '__return_false');
 
+>>>>>>> develop
