@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Customer Reset Password email
  *
@@ -15,33 +16,32 @@
  * @version 4.0.0
  */
 
-if ( ! defined( 'ABSPATH' ) ) {
+if (!defined('ABSPATH')) {
 	exit; // Exit if accessed directly.
 }
 
 ?>
 
-<?php do_action( 'woocommerce_email_header', $email_heading, $email ); ?>
+<?php do_action('woocommerce_email_header', $email_heading, $email); ?>
 
 <?php /* translators: %s: Customer username */ ?>
-<p><?php printf( esc_html__( 'Hi %s,', 'woocommerce' ), esc_html( $user_login ) ); ?></p>
+<p><?php printf(esc_html__('Kära %s,', 'woocommerce'), esc_html($user_login)); ?></p>
 <?php /* translators: %s: Store name */ ?>
-<p><?php printf( esc_html__( 'Someone has requested a new password for the following account on %s:', 'woocommerce' ), esc_html( wp_specialchars_decode( get_option( 'blogname' ), ENT_QUOTES ) ) ); ?></p>
+<p><?php printf(esc_html__('Någon har begärt att byta lösenord för kontot %s:', 'woocommerce'), esc_html(wp_specialchars_decode(get_option('blogname'), ENT_QUOTES))); ?></p>
 <?php /* translators: %s: Customer username */ ?>
-<p><?php printf( esc_html__( 'Username: %s', 'woocommerce' ), esc_html( $user_login ) ); ?></p>
-<p><?php esc_html_e( 'If you didn\'t make this request, just ignore this email. If you\'d like to proceed:', 'woocommerce' ); ?></p>
+<p><?php printf(esc_html__('Username: %s', 'woocommerce'), esc_html($user_login)); ?></p>
+<p><?php esc_html_e('Om du inte begärt nyty lösenord kan du bortse från detta, annars kan du klicka här:', 'woocommerce'); ?></p>
 <p>
-	<a class="link" href="<?php echo esc_url( add_query_arg( array( 'key' => $reset_key, 'id' => $user_id ), wc_get_endpoint_url( 'lost-password', '', wc_get_page_permalink( 'myaccount' ) ) ) ); ?>"><?php // phpcs:ignore ?>
-		<?php esc_html_e( 'Click here to reset your password', 'woocommerce' ); ?>
+	<a class="link" href="<?php echo esc_url(add_query_arg(array('key' => $reset_key, 'id' => $user_id), wc_get_endpoint_url('lost-password', '', wc_get_page_permalink('myaccount')))); ?>"><?php // phpcs:ignore 
+																																																		?>
+		<?php esc_html_e('Klicka här för att välja ett nytt lösenord', 'woocommerce'); ?>
 	</a>
 </p>
 
 <?php
-/**
- * Show user-defined additional content - this is set in each email's settings.
- */
-if ( $additional_content ) {
-	echo wp_kses_post( wpautop( wptexturize( $additional_content ) ) );
+
+if ($additional_content) {
+	echo wp_kses_post(wpautop(wptexturize($additional_content)));
 }
 
-do_action( 'woocommerce_email_footer', $email );
+do_action('woocommerce_email_footer', $email);
