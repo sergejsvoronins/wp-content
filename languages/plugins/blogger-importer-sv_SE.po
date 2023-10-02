@@ -1,0 +1,114 @@
+# Translation of Plugins - Blogger Importer - Stable (latest release) in Swedish
+# This file is distributed under the same license as the Plugins - Blogger Importer - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2023-08-20 09:23:26+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/4.0.0-alpha.7\n"
+"Language: sv_SE\n"
+"Project-Id-Version: Plugins - Blogger Importer - Stable (latest release)\n"
+
+#: blogger-importer.php:877
+msgid "Choose an XML file to upload, then click Upload file and import."
+msgstr "Välj en XML-fil att ladda upp, klicka sedan på Ladda upp fil och importera."
+
+#: blogger-importer.php:876
+msgid "Howdy! Upload your Blogger Exported XML file and we&#8217;ll import the contents from it into this site."
+msgstr "Hej! Ladda upp din exporterade XML-fil från Blogger så importerar vi innehållet från den till denna webbplats."
+
+#: blogger-importer.php:345
+msgid "Failed to create new user for %s. Their posts will be attributed to the current user."
+msgstr "Misslyckades att skapa ny användare för %s. Deras inlägg kommer att tillskrivas till den nuvarande användaren."
+
+#: blogger-importer.php:298
+msgid "- Select -"
+msgstr "- Välj -"
+
+#: blogger-importer.php:297
+msgid "or assign posts to an existing user:"
+msgstr "eller tilldela inlägg till en befintlig användare:"
+
+#: blogger-importer.php:291
+msgid "as a new user:"
+msgstr "som en ny användare:"
+
+#: blogger-importer.php:285
+msgid "Import author:"
+msgstr "Importera författare:"
+
+#: blogger-importer.php:272
+msgid "Submit"
+msgstr "Skicka"
+
+#: blogger-importer.php:260
+msgid "Assign Authors"
+msgstr "Tilldela författare"
+
+#: blogger-importer.php:208
+msgid "The export file could not be found at <code>%s</code>. It is likely that this was caused by a permissions problem."
+msgstr "Exportfilen kunde inte hittas under <code>%s</code>. Detta beror troligen på problem med rättigheter."
+
+#: blogger-importer.php:188
+msgid "Remember to update the passwords and roles of imported users."
+msgstr "Kom ihåg att uppdatera lösenord och roller för importerade användare."
+
+#: blogger-importer.php:187
+msgid "Have fun!"
+msgstr "Ha så kul!"
+
+#: blogger-importer.php:187
+msgid "All done."
+msgstr "Allt klart."
+
+#: blogger-importer.php:141
+msgid "The file does not exist, please try again."
+msgstr "Filen finns inte, försök igen."
+
+#: blogger-importer.php:140 blogger-importer.php:149 blogger-importer.php:203
+#: blogger-importer.php:207 blogger-importer.php:217
+msgid "Sorry, there has been an error."
+msgstr "Det har blivit ett fel."
+
+#. Author URI of the plugin
+msgid "http://wordpress.org/"
+msgstr "https://sv.wordpress.org/"
+
+#. Author of the plugin
+msgid "wordpressdotorg"
+msgstr "wordpressdotorg"
+
+#. Description of the plugin
+#: blogger-importer.php:930
+msgid "Import posts, comments, and categories from a Blogger blog and migrate authors to WordPress users."
+msgstr "Importera inlägg, kommentarer och taggar från en Blogger-blogg och migrera författare till Wordpress användare."
+
+#. Plugin URI of the plugin
+msgid "http://wordpress.org/extend/plugins/blogger-importer/"
+msgstr "http://wordpress.org/extend/plugins/blogger-importer/"
+
+#. Plugin Name of the plugin
+msgid "Blogger Importer"
+msgstr "Blogger Importer"
+
+#: blogger-importer.php:863
+msgid "Import Blogger"
+msgstr "Importera Blogger"
+
+#: blogger-importer.php:930
+msgid "Blogger"
+msgstr "Blogger"
+
+#: blogger-importer.php:671
+msgid "None of the images are valid"
+msgstr "Ingen av bilderna är giltiga"
+
+#: blogger-importer.php:642
+msgid "Lowrez not an image"
+msgstr "Lowrez är inte en bild"
+
+#: blogger-importer.php:728 blogger-importer.php:812
+msgid "Attempting to write back empty content"
+msgstr "Försöker skriva tillbaka tomt innehåll"

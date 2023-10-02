@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2023-09-15T19:48:29+00:00\n"
-"PO-Revision-Date: 2023-10-02 08:54+0000\n"
+"PO-Revision-Date: 2023-10-02 09:15+0000\n"
 "X-Generator: Loco https://localise.biz/\n"
 "X-Domain: woocommerce\n"
 "Language: sv_SE\n"
@@ -41528,7 +41528,7 @@ msgstr[1] ""
 #: packages/woocommerce-blocks/build/all-products.js:20
 #: packages/woocommerce-blocks/build/product-query.js:11
 msgid "Related products"
-msgstr ""
+msgstr "Relaterade produkter"
 
 #: templates/single-product/review-meta.php:27
 msgid "Your review is awaiting approval"
