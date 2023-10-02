@@ -39,4 +39,3 @@
                 <?php
                 do_action('storefront_content_top');
                 ?>
-                <main>
