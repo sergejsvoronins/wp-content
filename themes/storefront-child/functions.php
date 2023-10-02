@@ -1,4 +1,4 @@
-<?php 
+<?php
 register_nav_menus(array(
     "primary_menu" => array(
         "theme_location" => "Huvudmeny",
@@ -103,19 +103,21 @@ function theme_register_widget_areas()
 add_action('widgets_init', 'theme_register_widget_areas');
 
 // Change add to cart text on single product page
-add_filter( 'woocommerce_product_single_add_to_cart_text', 'woocommerce_add_to_cart_button_text_single' ); 
-function woocommerce_add_to_cart_button_text_single() {
-    return __( 'Lägg till', 'woocommerce' ); 
+add_filter('woocommerce_product_single_add_to_cart_text', 'woocommerce_add_to_cart_button_text_single');
+function woocommerce_add_to_cart_button_text_single()
+{
+    return __('Lägg till', 'woocommerce');
 }
 
 // Change add to cart text on product archives page
-add_filter( 'woocommerce_product_add_to_cart_text', 'woocommerce_add_to_cart_button_text_archives' );  
-function woocommerce_add_to_cart_button_text_archives() {
-    return __( 'Lägg till', 'woocommerce' );
+add_filter('woocommerce_product_add_to_cart_text', 'woocommerce_add_to_cart_button_text_archives');
+function woocommerce_add_to_cart_button_text_archives()
+{
+    return __('Lägg till', 'woocommerce');
 }
-add_action( 'init', 'remove_storefront_home_product_categories', 10 );
-function remove_storefront_home_product_categories(){
+add_action('init', 'remove_storefront_home_product_categories', 10);
+function remove_storefront_home_product_categories()
+{
     // Unhook storefront_product_categories() function from 'homepage' action hook
-    remove_action( 'homepage', 'storefront_product_categories', 20 );
+    remove_action('homepage', 'storefront_product_categories', 20);
 }
-?>

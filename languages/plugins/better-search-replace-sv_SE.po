@@ -1,0 +1,226 @@
+# Translation of Plugins - Better Search Replace - Development (trunk) in Swedish
+# This file is distributed under the same license as the Plugins - Better Search Replace - Development (trunk) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2023-06-11 21:14:38+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/4.0.0-alpha.7\n"
+"Language: sv_SE\n"
+"Project-Id-Version: Plugins - Better Search Replace - Development (trunk)\n"
+
+#. Author of the plugin
+msgid "WP Engine"
+msgstr "WP Engine"
+
+#: templates/sidebar.php:29
+msgid "Upgrade Now"
+msgstr "Uppgradera nu"
+
+#: templates/sidebar.php:25
+msgid "Get up to <span>50% off</span> your first year!"
+msgstr "Få upp till <span>50&nbsp;% rabatt</span> ditt första år!"
+
+#: templates/sidebar.php:21
+msgid "Email support"
+msgstr "E‑postsupport"
+
+#: templates/sidebar.php:18
+msgid "Export and import WordPress databases"
+msgstr "Exportera och importera WordPress-databaser"
+
+#: templates/sidebar.php:15
+msgid "Migrate full sites including themes, plugins, media, and database"
+msgstr "Migrera hela webbplatser inklusive teman, tillägg, media och databas"
+
+#: templates/sidebar.php:12
+msgid "Use regular expressions for complex string replacements"
+msgstr "Använd reguljära uttryck (regex) för komplicerade strängersättningar"
+
+#: templates/sidebar.php:9
+msgid "Preview database changes before they are saved"
+msgstr "Förhandsgranska databasändringar innan de sparas"
+
+#: templates/sidebar.php:5
+msgid "Gain access to more database and migration features"
+msgstr "Få åtkomst till fler databas- och migreringsfunktioner"
+
+#: templates/sidebar.php:4
+msgid "Upgrade"
+msgstr "Uppgradera"
+
+#: templates/bsr-settings.php:43
+msgid "If you notice timeouts or are unable to backup/import the database, try decreasing this value."
+msgstr "Om du upptäcker timeouter eller inte lyckas att säkerhetskopiera eller importera databasen kan du prova att minska detta värde."
+
+#: templates/bsr-search-replace.php:95
+msgid "Replace GUIDs"
+msgstr "Ersätt GUID:n"
+
+#: templates/bsr-search-replace.php:73
+msgid "Additional Settings"
+msgstr "Ytterligare inställningar"
+
+#: templates/bsr-search-replace.php:37
+msgid "Search and replace text in the database, including serialized arrays and objects. Be sure to back up your database before running this process."
+msgstr "Sök och ersätt text i databasen, inklusive serialiserade arrayer och objekt. Var noga med att säkerhetskopiera databasen innan du kör denna process."
+
+#: templates/bsr-help.php:61
+msgid "System Info"
+msgstr "Systeminformation"
+
+#: templates/bsr-help.php:43
+msgid "<a href=\"%s\" style=\"font-weight:bold;\" target=\"_blank\">Upgrade</a> to gain access to premium features and priority email support."
+msgstr "<a href=\"%s\" style=\"font-weight:bold;\"  target=\"_blank\">Uppgradera</a> för att få åtkomst till premiumfunktioner och prioriterad e-postsupport."
+
+#: templates/bsr-dashboard.php:53
+msgid "Upgrade now and get 50% off"
+msgstr "Uppgradera nu och få 50&nbsp;% rabatt"
+
+#: includes/class-bsr-admin.php:224
+msgid "<a href=\"%s\" target=\"_blank\">UPGRADE</a> to view details on the exact changes that will be made."
+msgstr "<a href=\"%s\" target=\"_blank\">UPPGRADERA</a> för att se detaljer om exakta ändringar som kommer att göras."
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+msgid "https://bettersearchreplace.com"
+msgstr "https://bettersearchreplace.com"
+
+#: includes/class-bsr-admin.php:235
+msgid " seconds"
+msgstr " sekunder"
+
+#: includes/class-bsr-ajax.php:157
+msgid "Processing table %d of %d: %s"
+msgstr "Bearbetar tabell %d av %d: %s"
+
+#: includes/class-bsr-admin.php:75
+msgid "Processing..."
+msgstr "Bearbetar …"
+
+#. Description of the plugin
+msgid "A small plugin for running a search/replace on your WordPress database."
+msgstr "Ett litet tillägg för att köra sök/ersätt på din WordPress-databas."
+
+#: templates/bsr-settings.php:39
+msgid "Max Page Size"
+msgstr "Maximal sidstorlek"
+
+#: templates/bsr-search-replace.php:118
+msgid "Run Search/Replace"
+msgstr "Kör sök/ersätt"
+
+#: templates/bsr-search-replace.php:107
+msgid "If checked, no changes will be made to the database, allowing you to check the results beforehand."
+msgstr "Om alternativet har valts görs inga ändringar i databasen, detta låter dig kontrollera resultatet i förväg."
+
+#: templates/bsr-search-replace.php:106
+msgid "Run as dry run"
+msgstr "Provkör kommandot utan att ändra något"
+
+#: templates/bsr-search-replace.php:96
+msgid "If left unchecked, all database columns titled 'guid' will be skipped."
+msgstr "Om rutan inte markerats kommer alla kolumner i databasen med rubriken ”guid” att hoppas över."
+
+#: templates/bsr-search-replace.php:85
+msgid "Searches are case-sensitive by default."
+msgstr "Som standard är sökningarna skiftlägeskänsliga."
+
+#: templates/bsr-search-replace.php:84
+msgid "Case-Insensitive"
+msgstr "Skiftlägeskänslig"
+
+#: templates/bsr-search-replace.php:61
+msgid "Select multiple tables with Ctrl-Click for Windows or Cmd-Click for Mac."
+msgstr "Välj flera tabeller med hjälp av Ctrl-klick (Windows) eller Cmd-klick (Mac)."
+
+#: templates/bsr-search-replace.php:59
+msgid "Select tables"
+msgstr "Välj tabeller"
+
+#: templates/bsr-search-replace.php:51
+msgid "Replace with"
+msgstr "Ersätt med"
+
+#: templates/bsr-search-replace.php:46
+msgid "Search for"
+msgstr "Sök efter"
+
+#: templates/bsr-help.php:51
+msgid "Found a bug or have a feature request? Please submit an issue on <a href=\"%s\">GitHub</a>!"
+msgstr "Har du hittat ett fel eller vill föreslå en ny finess? Skapa ett ärende på <a href=\"%s\">GitHub</a>!"
+
+#: templates/bsr-help.php:35
+msgid "Free support is available on the <a href=\"%s\">plugin support forums</a>."
+msgstr "Fri support finns i <a href=\"%s\">supportforumen för tillägg</a>."
+
+#: templates/bsr-help.php:26
+msgid "Help & Troubleshooting"
+msgstr "Hjälp och felsökning"
+
+#: templates/bsr-dashboard.php:67
+msgid "Help"
+msgstr "Hjälp"
+
+#: templates/bsr-dashboard.php:66 templates/bsr-settings.php:30
+msgid "Settings"
+msgstr "Inställningar"
+
+#: templates/bsr-dashboard.php:65 templates/bsr-search-replace.php:32
+msgid "Search/Replace"
+msgstr "Sök/ersätt"
+
+#: includes/class-bsr-db.php:295
+msgid "Error updating row: %d."
+msgstr "Fel vid uppdatering av rad: %d."
+
+#: includes/class-bsr-db.php:85
+msgid "(%s MB)"
+msgstr "(%s MB)"
+
+#: includes/class-bsr-admin.php:285
+msgid "Upgrade to Pro"
+msgstr "Uppgradera till Pro"
+
+#: includes/class-bsr-admin.php:213
+msgid "Time"
+msgstr "Tid"
+
+#: includes/class-bsr-admin.php:213
+msgid "Rows Updated"
+msgstr "Rader uppdaterade"
+
+#: includes/class-bsr-admin.php:213
+msgid "Changes Found"
+msgstr "Ändringar hittade"
+
+#: includes/class-bsr-admin.php:213
+msgid "Table"
+msgstr "Tabell"
+
+#: includes/class-bsr-admin.php:115
+msgid "<p>During the search/replace, <strong>%d</strong> tables were searched, with <strong>%d</strong> cells changed in <strong>%d</strong> updates.</p><p><a href=\"%s\" class=\"thickbox\" title=\"Search/Replace Details\">Click here</a> for more details.</p>"
+msgstr "<p>Vid sök/ersätt har <strong>%d</strong> tabeller genomsökts och <strong>%d</strong> celler ändrats med <strong>%d</strong> redigeringar.</p><p><a href=\"%s\" class=\"thickbox\" title=\"Information om sök/ersätt\">Klicka här</a> för ytterligare information.</p>"
+
+#: includes/class-bsr-admin.php:108
+msgid "<p><strong>DRY RUN:</strong> <strong>%d</strong> tables were searched, <strong>%d</strong> cells were found that need to be updated, and <strong>%d</strong> changes were made.</p><p><a href=\"%s\" class=\"thickbox\" title=\"Dry Run Details\">Click here</a> for more details, or use the form below to run the search/replace.</p>"
+msgstr "<p><strong>PROVKÖRNING:</strong> <strong>%d</strong> tabeller genomsöktes, <strong>%d</strong> celler hittades som behöver ändras och <strong>%d</strong> ändringar har gjorts.</p><p><a href=\"%s\" class=\"thickbox\" title=\"Provkörningsuppgifter\">Klicka här</a> för ytterligare information eller använd formuläret nedan för att köra detta sök/ersätt-kommando.</p>"
+
+#. Plugin Name of the plugin
+#: includes/class-bsr-admin.php:87
+msgid "Better Search Replace"
+msgstr "Better Search Replace"
+
+#: includes/class-bsr-admin.php:74
+msgid "An error occurred processing your request. Try decreasing the \"Max Page Size\", or contact support."
+msgstr "Ett fel inträffade under bearbetningen av din begäran. Försök att minska ”Max Page Size” eller kontakta supporten."
+
+#: includes/class-bsr-admin.php:73
+msgid "Please select the tables that you want to update."
+msgstr "Välj vilka tabeller du vill uppdatera."
+
+#: includes/class-bsr-admin.php:72
+msgid "No search string was defined, please enter a URL or string to search for."
+msgstr "Ingen söksträng angiven, skriv in en URL eller sträng att söka efter."
