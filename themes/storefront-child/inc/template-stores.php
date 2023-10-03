@@ -9,10 +9,10 @@ get_header();
     <h1>
         <?php the_title(); ?>
     </h1>
-    <div class="news">
+    <div class="shops">
 <?php
 query_posts(array(
-'post_type' => 'news'
+'post_type' => 'hitta-till-oss'
 )); ?>
  
 <?php

@@ -42,82 +42,54 @@ body{
         display: none;
     }
 
-    .site-main {
-        div:nth-child(4) {
-            display: none;
-        }
-        .products {
-            .product {
-                width: 400px;
-                height: auto;
-                a:nth-child(1) {
-                    height: 100%;
-                    position: relative;
-                    padding: 1rem;
-                    img {
-                        width: 250px;
-                        height:auto;
-                        padding: 1rem;
-                    }
-                    .onsale {
-                        position: absolute;
-                        top: 0;
-                        right: 0;
-                        background-color: #fff;
-                    }
-                }
-            }
-        }
-    }
-    footer{
-        width: 100%;
-        height: 100%;
-        margin-top:10%;
-       
-
-        .footer-wrapper{
-            position: relative;
-            padding-top: 3em;
-            height: 100%;
-                div{
-                    position: absolute;
-                    width:15%;
-                    margin:2em;
-                    padding: 2em;
-                    right:240px;
-                    bottom: 700px;
-
-                &__icon{
-                    position: absolute;
-                    width:50%;
-                    margin:2em;
-                    padding: 2em;
-                        &__l{
-                            position: absolute;
-                            width:15%;
-                            height: auto;
-                            margin:2em;
-                            padding: 2em;
-                            // bottom:600px;
-                            // right:200px;
-                    }
-
-                    &__a{
-                        position: absolute;
-                        width:15%;
-                        height: auto;
-                        margin:2em;
-                        padding: 2em;
-                        right: -20px;
-                    }
-                }
-
-            }
-        }  
-    }
-}
-    
-
     .ii a[href]{
         color: reD !important;
     }
+}
+//     footer{
+//         width: 100%;
+//         height: 100%;
+//         margin-top:10%;
+
+
+//         .footer-wrapper{
+//             position: relative;
+//             padding-top: 3em;
+//             height: 100%;
+//                 div{
+//                     position: absolute;
+//                     width:15%;
+//                     margin:2em;
+//                     padding: 2em;
+//                     right:240px;
+//                     bottom: 700px;
+
+//                 &__icon{
+//                     position: absolute;
+//                     width:50%;
+//                     margin:2em;
+//                     padding: 2em;
+//                         &__l{
+//                             position: absolute;
+//                             width:15%;
+//                             height: auto;
+//                             margin:2em;
+//                             padding: 2em;
+//                             // bottom:600px;
+//                             // right:200px;
+//                     }
+
+//                     &__a{
+//                         position: absolute;
+//                         width:15%;
+//                         height: auto;
+//                         margin:2em;
+//                         padding: 2em;
+//                         right: -20px;
+//                     }
+//                 }
+
+//             }
+//         }  
+//     }
+    
