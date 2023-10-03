@@ -19,7 +19,7 @@
 defined('ABSPATH') || exit;
 
 /*
- * @hooked WC_Emails::email_header() Output the email header
+ * @hooked WC_Ema ils::email_header() Output the email header
  */
 do_action('woocommerce_email_header', $email_heading, $email); ?>
 
