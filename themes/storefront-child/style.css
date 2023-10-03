@@ -72,28 +72,7 @@ Version: 4.5.2
   content: "";
 }
 
-section {
-  text-align: center;
-}
-section .store-wrapper {
-  margin: 0;
-  padding: 2em;
-  height: auto;
-  width: 80%;
-  background-color: rgb(240, 245, 245);
-  border: 2px solid orange;
-  border-radius: 7%;
-  display: flex;
-}
-section .store-wrapper article {
-  flex-direction: row;
-}
-section .store-wrapper img {
-  width: 30%;
-  height: auto;
-}
-
-.site-header {
+body .site-header {
   position: relative;
   height: 50%;
   width: 100vw;
@@ -108,13 +87,10 @@ body .site-header .img-header {
   width: 30%;
   height: 80px;
 }
-.site-header .woocommerce-info {
-  background-color: rgb(230, 161, 172);
+body .woocommerce-message, body .woocommerce-info, body .woocommerce-error, body .woocommerce-noreviews, body p.no-comments {
+  background-color: rgb(192, 137, 146);
 }
-.site-header body .woocommerce-info {
-  background-color: rgb(230, 161, 172);
-}
-.site-header body .storefront-breadcrumb {
+body .storefront-breadcrumb {
   display: none;
 }
 body .site-main div:nth-child(4) {
@@ -140,20 +116,17 @@ body .site-main .products .product a:nth-child(1) .onsale {
   right: 0;
   background-color: #fff;
 }
-.site-header body .site-main .woocommerce-info {
-  background-color: rgb(230, 161, 172);
-}
-.site-header body .site-main footer {
+body footer {
   width: 100%;
   height: 100%;
   margin-top: 10%;
 }
-.site-header body .site-main footer .footer-wrapper {
+body footer .footer-wrapper {
   position: relative;
   padding-top: 3em;
   height: 100%;
 }
-.site-header body .site-main footer .footer-wrapper div {
+body footer .footer-wrapper div {
   position: absolute;
   width: 15%;
   margin: 2em;
@@ -161,20 +134,20 @@ body .site-main .products .product a:nth-child(1) .onsale {
   right: 240px;
   bottom: 700px;
 }
-.site-header body .site-main footer .footer-wrapper div__icon {
+body footer .footer-wrapper div__icon {
   position: absolute;
   width: 50%;
   margin: 2em;
   padding: 2em;
 }
-.site-header body .site-main footer .footer-wrapper div__icon__l {
+body footer .footer-wrapper div__icon__l {
   position: absolute;
   width: 15%;
   height: auto;
   margin: 2em;
   padding: 2em;
 }
-.site-header body .site-main footer .footer-wrapper div__icon__a {
+body footer .footer-wrapper div__icon__a {
   position: absolute;
   width: 15%;
   height: auto;
