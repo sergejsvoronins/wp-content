@@ -72,27 +72,6 @@ Version: 4.5.2
   content: "";
 }
 
-section {
-  text-align: center;
-}
-section .store-wrapper {
-  margin: 0;
-  padding: 2em;
-  height: auto;
-  width: 80%;
-  background-color: rgb(240, 245, 245);
-  border: 2px solid orange;
-  border-radius: 7%;
-  display: flex;
-}
-section .store-wrapper article {
-  flex-direction: row;
-}
-section .store-wrapper img {
-  width: 30%;
-  height: auto;
-}
-
 .site-header {
   position: relative;
   height: 50%;
