@@ -8,6 +8,7 @@ register_nav_menus(array(
     "footer_menu" => "Footermeny"
 ));
 
+
 add_theme_support(
     'post-formats',
     array(
@@ -54,6 +55,17 @@ add_theme_support(
         'default-color' => 'd1e4dd',  $bg_defaults
     )
 );
+
+add_filter('woocommerce_email_styles', 'my_email_styles');
+
+function my_email_styles($styles)
+{
+    $styles['a'] = 'color: #E6A1A1;';
+    //This will change the link color to black. You can change the color code to any desired color.   
+    return $styles;
+}
+
+
 function theme_register_widget_areas()
 {
     $widget_areas = array(
