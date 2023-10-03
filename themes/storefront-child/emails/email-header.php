@@ -10,7 +10,7 @@
  * maintain compatibility. We try to do this as little as possible, but it does
  * happen. When this occurs the version of the template file will be bumped and
  * the readme will list any important changes.
- *
+ *email
  * @see     https://docs.woocommerce.com/document/template-structure/
  * @package WooCommerce\Templates\Emails
  * @version 7.4.0
@@ -57,6 +57,7 @@ if (!defined('ABSPATH')) {
                                                     <td id="header_wrapper">
                                                         <h1 style="font-family: Optima, sans serif; text-align:center;"><?php echo esc_html($email_heading); ?></h1>
                                                     </td>
+
                                                 </tr>
                                             </table>
                                             <!-- End Header -->
