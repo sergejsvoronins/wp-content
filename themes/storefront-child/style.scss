@@ -18,28 +18,33 @@ Version: 4.5.2
 @import "./scss-partials/footer";
 @import "./scss-partials/stores-page";
 
+.site-header{
+    position: relative;
+    height: 50%;
+    width:100vw;
+    background-repeat: no-repeat;
+  height: auto;
+  background-size: cover;
+.img-header{
+    position: absolute;
+    left: 18%;
+    top:-18px;
+    width:30%;
+    height:80px;
+}
+// .woocommerce-info{
+//     background-color: rgb(230, 161, 172);
+}
 body{
-    .site-header{
-        position: relative;
-        height: 50%;
-        width:100%;
-    .img-icon{
-        width:7%;
-        height: auto;
-        position:absolute;
-        top: 10%;
-        right: 30%;
-        opacity: 0.5;
+    .woocommerce-info{
+        background-color: rgb(230, 161, 172);
     }
-    .img-header{
-        position: absolute;
-        left: 18%;
-        top:-18px;
-        width:30%;
-        height:80px;
+   .site-main{
+        margin-top: 3em;
+        margin-bottom: 3em;
     }
 
-    }
+    
 .storefront-breadcrumb {
     display: none;
 }
@@ -50,13 +55,15 @@ body{
     }
     .products {
         .product {
-            height: 400px;
+            width: 400px;
+            height: auto;
             a:nth-child(1) {
-                height: 90%;
+                height: 100%;
                 position: relative;
                 padding: 1rem;
                 img {
-                    height: 250px;
+                    width: 250px;
+                    height:auto;
                     padding: 1rem;
                 }
                 .onsale {
@@ -69,7 +76,9 @@ body{
         }
     }
 
-
+.woocommerce-info{
+    background-color: rgb(230, 161, 172);
+}
 
     // height: 100%;
     // width: 100vw;
@@ -123,4 +132,8 @@ body{
         }
     }
 }
-}
+    }
+
+    .ii a[href]{
+        color: reD !important;
+    }

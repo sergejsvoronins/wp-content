@@ -93,25 +93,28 @@ section .store-wrapper img {
   height: auto;
 }
 
-body .site-header {
+.site-header {
   position: relative;
   height: 50%;
-  width: 100%;
-}
-body .site-header .img-icon {
-  width: 7%;
+  width: 100vw;
+  background-repeat: no-repeat;
   height: auto;
-  position: absolute;
-  top: 10%;
-  right: 30%;
-  opacity: 0.5;
+  background-size: cover;
 }
-body .site-header .img-header {
+.site-header .img-header {
   position: absolute;
   left: 18%;
   top: -18px;
   width: 30%;
   height: 80px;
+}
+
+body .woocommerce-info {
+  background-color: rgb(230, 161, 172);
+}
+body .site-main {
+  margin-top: 3em;
+  margin-bottom: 3em;
 }
 body .storefront-breadcrumb {
   display: none;
@@ -120,15 +123,17 @@ body .site-main div:nth-child(4) {
   display: none;
 }
 body .site-main .products .product {
-  height: 400px;
+  width: 400px;
+  height: auto;
 }
 body .site-main .products .product a:nth-child(1) {
-  height: 90%;
+  height: 100%;
   position: relative;
   padding: 1rem;
 }
 body .site-main .products .product a:nth-child(1) img {
-  height: 250px;
+  width: 250px;
+  height: auto;
   padding: 1rem;
 }
 body .site-main .products .product a:nth-child(1) .onsale {
@@ -136,6 +141,9 @@ body .site-main .products .product a:nth-child(1) .onsale {
   top: 0;
   right: 0;
   background-color: #fff;
+}
+body .site-main .woocommerce-info {
+  background-color: rgb(230, 161, 172);
 }
 body .site-main footer {
   width: 100%;
@@ -175,4 +183,8 @@ body .site-main footer .footer-wrapper div__icon__a {
   margin: 2em;
   padding: 2em;
   right: -20px;
+}
+
+.ii a[href] {
+  color: reD !important;
 }/*# sourceMappingURL=style.css.map */
