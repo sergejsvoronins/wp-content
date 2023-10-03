@@ -1,6 +1,6 @@
 <?php get_header() ?>
 <?php
-$heroImage = get_field("hero_image");
+$heroImage = get_field("home_image");
 $homeHeader = get_field("home_header");
 $homeTextContent = get_field("home_text_content");
 $homeButton = get_field("home_button") ?>
