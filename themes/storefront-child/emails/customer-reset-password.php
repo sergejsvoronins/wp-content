@@ -33,7 +33,7 @@ if (!defined('ABSPATH')) {
 <p><?php esc_html_e('Om du inte begärt nyty lösenord kan du bortse från detta, annars kan du klicka här:', 'woocommerce'); ?></p>
 <p>
 	<a class="link" href="<?php echo esc_url(add_query_arg(array('key' => $reset_key, 'id' => $user_id), wc_get_endpoint_url('lost-password', '', wc_get_page_permalink('myaccount')))); ?>"><?php // phpcs:ignore 
-																																																		?>
+																																																?>
 		<?php esc_html_e('Klicka här för att välja ett nytt lösenord', 'woocommerce'); ?>
 	</a>
 </p>
