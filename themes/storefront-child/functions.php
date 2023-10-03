@@ -156,7 +156,7 @@ add_action( 'woocommerce_before_cart_table', 'cart_page_notice' );
  
 function cart_page_notice() {
     $free_shipping_settings = get_option( 'woocommerce_free_shipping_settings' );
-	$min_amount = 200; //This is the amount of your free shipping threshold. Change according to your free shipping settings
+	$min_amount = 500; //This is the amount of your free shipping threshold. Change according to your free shipping settings
 	$current = WC()->cart->subtotal;
 	if ( $current < $min_amount ) {
 		$added_text = '<div class="woocommerce-message">Köp produkter ytterligare för ' . wc_price( $min_amount - $current ) . ' till gratis frakt!<br/>'; // This is the message shown on the single product page

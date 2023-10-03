@@ -18,77 +18,57 @@ Version: 4.5.2
 @import "./scss-partials/footer";
 @import "./scss-partials/stores-page";
 
-.site-header{
-    position: relative;
-    height: 50%;
-    width:100vw;
-    background-repeat: no-repeat;
-  height: auto;
-  background-size: cover;
-// .img-icon{
-//     width:7%;
-//     height: auto;
-//     position:absolute;
-//     top: 10%;
-//     right: 30%;
-//     opacity: 0.5;
-// }
-.img-header{
-    position: absolute;
-    left: 18%;
-    top:-18px;
-    width:30%;
-    height:80px;
-}
-.woocommerce-info{
-    background-color: rgb(230, 161, 172);
-}
 body{
-    .woocommerce-info{
-        background-color: rgb(230, 161, 172);
-    }
-
+    .site-header{
+        position: relative;
+        height: 50%;
+        width:100vw;
+        background-repeat: no-repeat;
+      height: auto;
+      background-size: cover;
     
-.storefront-breadcrumb {
-    display: none;
-}
-
-.site-main {
-    div:nth-child(4) {
+    .img-header{
+        position: absolute;
+        left: 18%;
+        top:-18px;
+        width:30%;
+        height:80px;
+    }
+    }
+    .woocommerce-message, .woocommerce-info, .woocommerce-error, .woocommerce-noreviews, p.no-comments {
+        background-color: $messageBg;
+    }
+    .storefront-breadcrumb {
         display: none;
     }
-    .products {
-        .product {
-            width: 400px;
-            height: auto;
-            a:nth-child(1) {
-                height: 100%;
-                position: relative;
-                padding: 1rem;
-                img {
-                    width: 250px;
-                    height:auto;
+
+    .site-main {
+        div:nth-child(4) {
+            display: none;
+        }
+        .products {
+            .product {
+                width: 400px;
+                height: auto;
+                a:nth-child(1) {
+                    height: 100%;
+                    position: relative;
                     padding: 1rem;
-                }
-                .onsale {
-                    position: absolute;
-                    top: 0;
-                    right: 0;
-                    background-color: #fff;
+                    img {
+                        width: 250px;
+                        height:auto;
+                        padding: 1rem;
+                    }
+                    .onsale {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        background-color: #fff;
+                    }
                 }
             }
         }
     }
-
-.woocommerce-info{
-    background-color: rgb(230, 161, 172);
-}
-
-    // height: 100%;
-    // width: 100vw;
-    // background-color: rgb(255, 251, 252);
-    
-  
     footer{
         width: 100%;
         height: 100%;
@@ -135,5 +115,4 @@ body{
             }
         }
     }
-}
-    }}
+    }
