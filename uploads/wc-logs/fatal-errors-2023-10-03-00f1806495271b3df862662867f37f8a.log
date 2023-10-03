@@ -1,0 +1,64 @@
+2023-10-03T19:00:35+00:00 CRITICAL Uncaught Error: Call to undefined function get_field() in /Applications/MAMP/htdocs/e-commerce/wp-content/themes/storefront-child/front-page.php:3
+Stack trace:
+#0 /Applications/MAMP/htdocs/e-commerce/wp-includes/template-loader.php(106): include()
+#1 /Applications/MAMP/htdocs/e-commerce/wp-blog-header.php(19): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/e-commerce/index.php(17): require('/Applications/M...')
+#3 {main}
+  thrown in /Applications/MAMP/htdocs/e-commerce/wp-content/themes/storefront-child/front-page.php on line 3
+
+2023-10-03T19:00:59+00:00 CRITICAL Uncaught Error: Call to undefined function get_field() in /Applications/MAMP/htdocs/e-commerce/wp-content/themes/storefront-child/front-page.php:3
+Stack trace:
+#0 /Applications/MAMP/htdocs/e-commerce/wp-includes/template-loader.php(106): include()
+#1 /Applications/MAMP/htdocs/e-commerce/wp-blog-header.php(19): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/e-commerce/index.php(17): require('/Applications/M...')
+#3 {main}
+  thrown in /Applications/MAMP/htdocs/e-commerce/wp-content/themes/storefront-child/front-page.php on line 3
+
+2023-10-03T19:01:51+00:00 CRITICAL Uncaught Error: Call to undefined function get_field() in /Applications/MAMP/htdocs/e-commerce/wp-content/themes/storefront-child/front-page.php:3
+Stack trace:
+#0 /Applications/MAMP/htdocs/e-commerce/wp-includes/template-loader.php(106): include()
+#1 /Applications/MAMP/htdocs/e-commerce/wp-blog-header.php(19): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/e-commerce/index.php(17): require('/Applications/M...')
+#3 {main}
+  thrown in /Applications/MAMP/htdocs/e-commerce/wp-content/themes/storefront-child/front-page.php on line 3
+
+2023-10-03T19:01:59+00:00 CRITICAL Uncaught Error: Call to undefined function get_field() in /Applications/MAMP/htdocs/e-commerce/wp-content/themes/storefront-child/front-page.php:3
+Stack trace:
+#0 /Applications/MAMP/htdocs/e-commerce/wp-includes/template-loader.php(106): include()
+#1 /Applications/MAMP/htdocs/e-commerce/wp-blog-header.php(19): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/e-commerce/index.php(17): require('/Applications/M...')
+#3 {main}
+  thrown in /Applications/MAMP/htdocs/e-commerce/wp-content/themes/storefront-child/front-page.php on line 3
+
+2023-10-03T19:02:05+00:00 CRITICAL Uncaught Error: Call to undefined function get_field() in /Applications/MAMP/htdocs/e-commerce/wp-content/themes/storefront-child/front-page.php:3
+Stack trace:
+#0 /Applications/MAMP/htdocs/e-commerce/wp-includes/template-loader.php(106): include()
+#1 /Applications/MAMP/htdocs/e-commerce/wp-blog-header.php(19): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/e-commerce/index.php(17): require('/Applications/M...')
+#3 {main}
+  thrown in /Applications/MAMP/htdocs/e-commerce/wp-content/themes/storefront-child/front-page.php on line 3
+
+2023-10-03T19:02:22+00:00 CRITICAL Uncaught Error: Call to undefined function get_field() in /Applications/MAMP/htdocs/e-commerce/wp-content/themes/storefront-child/front-page.php:3
+Stack trace:
+#0 /Applications/MAMP/htdocs/e-commerce/wp-includes/template-loader.php(106): include()
+#1 /Applications/MAMP/htdocs/e-commerce/wp-blog-header.php(19): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/e-commerce/index.php(17): require('/Applications/M...')
+#3 {main}
+  thrown in /Applications/MAMP/htdocs/e-commerce/wp-content/themes/storefront-child/front-page.php on line 3
+
+2023-10-03T19:02:48+00:00 CRITICAL Uncaught Error: Call to undefined function get_field() in /Applications/MAMP/htdocs/e-commerce/wp-content/themes/storefront-child/front-page.php:3
+Stack trace:
+#0 /Applications/MAMP/htdocs/e-commerce/wp-includes/template-loader.php(106): include()
+#1 /Applications/MAMP/htdocs/e-commerce/wp-blog-header.php(19): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/e-commerce/index.php(17): require('/Applications/M...')
+#3 {main}
+  thrown in /Applications/MAMP/htdocs/e-commerce/wp-content/themes/storefront-child/front-page.php on line 3
+
+2023-10-03T19:03:07+00:00 CRITICAL Uncaught Error: Call to undefined function get_field() in /Applications/MAMP/htdocs/e-commerce/wp-content/themes/storefront-child/front-page.php:4
+Stack trace:
+#0 /Applications/MAMP/htdocs/e-commerce/wp-includes/template-loader.php(106): include()
+#1 /Applications/MAMP/htdocs/e-commerce/wp-blog-header.php(19): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/e-commerce/index.php(17): require('/Applications/M...')
+#3 {main}
+  thrown in /Applications/MAMP/htdocs/e-commerce/wp-content/themes/storefront-child/front-page.php on line 4
+
