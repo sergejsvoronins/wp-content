@@ -166,14 +166,28 @@ add_filter( 'woocommerce_package_rates', 'hide_shipping_when_free_is_available',
 
 add_action( 'woocommerce_before_cart_table', 'cart_page_notice' );
  
+function get_free_shipping_min_amount () {
+    $zone_ids = array_keys( array('') + WC_Shipping_Zones::get_zones() );
+    foreach ( $zone_ids as $zone_id ) {
+        $shipping_zone = new WC_Shipping_Zone($zone_id);
+
+        $shipping_methods = $shipping_zone->get_shipping_methods( true, 'values' );
+
+        foreach ( $shipping_methods as $instance_id => $shipping_method ) {
+            if($shipping_method->id == "free_shipping") {
+                return $shipping_method->min_amount;
+
+            }
+        }
+    }   
+}
 function cart_page_notice() {
-    $free_shipping_settings = get_option( 'woocommerce_free_shipping_settings' );
-	$min_amount = 500; //This is the amount of your free shipping threshold. Change according to your free shipping settings
+    $min_amount  = (int)get_free_shipping_min_amount();
 	$current = WC()->cart->subtotal;
 	if ( $current < $min_amount ) {
-		$added_text = '<div class="woocommerce-message">Köp produkter ytterligare för ' . wc_price( $min_amount - $current ) . ' till gratis frakt!<br/>'; // This is the message shown on the single product page
+		$added_text = '<div class="woocommerce-message">Köp produkter ytterligare för ' . wc_price( $min_amount - $current ) . ' till gratis frakt!<br/>'; 
 		$return_to = wc_get_page_permalink( 'shop' );
-		$notice = sprintf( '%s<a href="%s">%s</a>', $added_text, esc_url( $return_to ), 'Continue shopping</div>' ); // This is the text shown below the notification. Link redirects to the shop page
+		$notice = sprintf( '%s<a href="%s">%s</a>', $added_text, esc_url( $return_to ), 'Continue shopping</div>' ); 
 		echo $notice;
 	}
 }
