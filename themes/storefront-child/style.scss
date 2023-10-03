@@ -25,14 +25,6 @@ Version: 4.5.2
     background-repeat: no-repeat;
   height: auto;
   background-size: cover;
-// .img-icon{
-//     width:7%;
-//     height: auto;
-//     position:absolute;
-//     top: 10%;
-//     right: 30%;
-//     opacity: 0.5;
-// }
 .img-header{
     position: absolute;
     left: 18%;
@@ -40,12 +32,16 @@ Version: 4.5.2
     width:30%;
     height:80px;
 }
-.woocommerce-info{
-    background-color: rgb(230, 161, 172);
+// .woocommerce-info{
+//     background-color: rgb(230, 161, 172);
 }
 body{
     .woocommerce-info{
         background-color: rgb(230, 161, 172);
+    }
+   .site-main{
+        margin-top: 3em;
+        margin-bottom: 3em;
     }
 
     
@@ -136,4 +132,8 @@ body{
         }
     }
 }
-    }}
+    }
+
+    .ii a[href]{
+        color: reD !important;
+    }

@@ -39,3 +39,4 @@
                 <?php
                 do_action('storefront_content_top');
                 ?>
+                <main id="main" class="site-main" role="main">
