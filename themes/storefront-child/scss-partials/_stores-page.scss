@@ -1,24 +1,24 @@
 @import "variables";
 @import "mixins";
 
-section{
-    text-align: center;
+// section{
+//     text-align: center;
     
-.store-wrapper{
-    margin: 0;
-    padding: 2em;
-    height: auto;
-    width: 80%;
-    background-color: rgb(240, 245, 245);
-    border: 2px solid rgb(242, 235, 222);
-    border-radius: 7%;
-    display: flex;
-article{
-    flex-direction: row;
-}
-    img{
-        width: 30%;
-        height: auto;
-    }
-}
-}
+// .store-wrapper{
+//     margin: 0;
+//     padding: 2em;
+//     height: auto;
+//     width: 80%;
+//     background-color: rgb(240, 245, 245);
+//     border: 2px solid orange;
+//     border-radius: 7%;
+//     display: flex;
+// article{
+//     flex-direction: row;
+// }
+//     img{
+//         width: 30%;
+//         height: auto;
+//     }
+// }
+// }
