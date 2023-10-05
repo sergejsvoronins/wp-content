@@ -17,34 +17,20 @@ Version: 4.5.2
 @import "./scss-partials/homepage";
 @import "./scss-partials/footer";
 @import "./scss-partials/stores-page";
+@import "./scss-partials/header";
 
-.site-header{
-    position: relative;
-    height: 100%;
-    width:100vw;
-    background-repeat: no-repeat;
-  background-size: cover;
-  margin-bottom: 3em;
-.img-header{
-    position: absolute;
-    left: 18%;
-    top:-18px;
-    width:30%;
-    height:80px;
-}
-
-// .woocommerce-info{
-//     background-color: rgb(230, 161, 172);
-}
 body{
+    
+    .woocommerce-message, .woocommerce-info, .woocommerce-error, .woocommerce-noreviews, p.no-comments {
+        background-color: $messageBg;
+    }
+    .storefront-breadcrumb {
+        display: none;
+    }
     background-color: #ea8b8b;
     .woocommerce-info{
         background-color: rgb(230, 161, 172);
     }
-//    .site-main{
-//         margin-top: 3em;
-//         margin-bottom: 3em;
-//     }
 .columns-4 {
     box-sizing: border-box;
     box-shadow: 0 4px 3px 0 #ea8bae, 0 18px 40px 0 rgba(253, 229, 249, 0.828);
@@ -76,80 +62,6 @@ main{
         display: none;
     }
 
-    .products {
-        .product {
-            width: 400px;
-            height: auto;
-            a:nth-child(1) {
-                height: 100%;
-                position: relative;
-                padding: 1rem;
-                img {
-                    width: 250px;
-                    height:auto;
-                    padding: 1rem;
-                }
-                .onsale {
-                    position: absolute;
-                    top: 0;
-                    right: 0;
-                    background-color: #fff;
-                }
-            }
-        }
-    }
 }
 }
-  
-    footer{
-        width: 100%;
-        height: 100%;
-        margin-top:10%;
-       
-
-        .footer-wrapper{
-            position: relative;
-            padding-top: 3em;
-            height: 100%;
-                div{
-                    position: absolute;
-                    width:15%;
-                    margin:2em;
-                    padding: 2em;
-                    right:240px;
-                    bottom: 700px;
-
-                &__icon{
-                    position: absolute;
-                    width:50%;
-                    margin:2em;
-                    padding: 2em;
-                        &__l{
-                            position: absolute;
-                            width:15%;
-                            height: auto;
-                            margin:2em;
-                            padding: 2em;
-                            // bottom:600px;
-                            // right:200px;
-                    }
-
-                    &__a{
-                        position: absolute;
-                        width:15%;
-                        height: auto;
-                        margin:2em;
-                        padding: 2em;
-                        right: -20px;
-                    }
-                }
-
-            }
-        }  
-    }
 }
-    
-
-    .ii a[href]{
-        color: reD !important;
-    }

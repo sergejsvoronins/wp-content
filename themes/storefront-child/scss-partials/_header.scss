@@ -1,0 +1,40 @@
+@import "mixins";
+
+
+.site-header{
+    position: relative;
+    
+    width:100vw;
+    background-repeat: no-repeat;
+  height: auto;
+  background-size: cover;
+  margin-bottom: 2em;
+  .main-navigation ul.menu, .main-navigation ul.nav-menu{
+      @include tablet{
+  
+      max-height: none;
+      overflow: visible;
+      margin-left: -1em;
+      transition: none;
+      position: absolute;
+      bottom: 1%;
+      left:28%;
+      
+        
+      }
+      @include desktop{
+        bottom: 2em;
+        left:35%;
+  }
+  }
+  @include tablet{
+    height: 380px;
+    margin-bottom: 4em;
+
+  }
+@include desktop{
+  height: 350px;
+  margin-bottom: 4.6em;
+}
+
+}
