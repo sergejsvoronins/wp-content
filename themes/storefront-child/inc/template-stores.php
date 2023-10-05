@@ -6,10 +6,8 @@ get_header();
 ?>
 
 <section>
-    <!-- <h1>
-        <?php the_title(); ?>
-    </h1> -->
-    <div class="shops">
+    hej
+    <div class="stores">
         <?php
         query_posts(array(
             'post_type' => 'hitta-till-oss'
