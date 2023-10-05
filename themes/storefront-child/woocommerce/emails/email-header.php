@@ -15,7 +15,7 @@ if (!defined('ABSPATH')) {
     <title style="font-family: Optima, sans-serif" color="#dcbbbb"><?php echo get_bloginfo('name', 'display'); ?></title>
 </head>
 
-<body style="font-family: Helvetica, sans-serif; line-height:125%; color:#663704; text-decoration:none;" <?php echo is_rtl() ? 'rightmargin' : 'leftmargin'; ?>="0" marginwidth="0" topmargin="0" marginheight="0" offset="0">
+<body style="font-family: Tahoma, sans-serif; line-height:125%; color:#663704; text-decoration:none;" <?php echo is_rtl() ? 'rightmargin' : 'leftmargin'; ?>="0" marginwidth="0" topmargin="0" marginheight="0" offset="0">
     <table width="100%" id="outer_wrapper">
         <tr>
             <td><!-- Deliberately empty to support consistent sizing and layout across multiple email clients. --></td>
