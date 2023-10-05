@@ -80,11 +80,30 @@ Version: 4.5.2
   background-size: cover;
   margin-bottom: 2em;
 }
+.site-header .site-branding {
+  display: none;
+}
+.site-header .main-navigation ul {
+  background-color: rgb(249, 243, 249);
+  opacity: 0.7;
+  width: 50%;
+  padding-left: 1em;
+}
+.site-header .main-navigation ul li {
+  font-size: medium;
+}
+@media screen and (min-width: 700px) {
+  .site-header .main-navigation ul {
+    background: none;
+    padding: 0;
+    border: none;
+  }
+}
 @media screen and (min-width: 700px) {
   .site-header .main-navigation ul.menu, .site-header .main-navigation ul.nav-menu {
     max-height: none;
+    width: 100%;
     overflow: visible;
-    margin-left: -1em;
     transition: none;
     position: absolute;
     bottom: 1%;

@@ -9,12 +9,31 @@
   height: auto;
   background-size: cover;
   margin-bottom: 2em;
+
+  .site-branding{
+    display: none;
+  }
+  .main-navigation ul{
+    background-color: rgb(249, 243, 249);
+    opacity: 0.7;
+    width: 50%;
+    padding-left: 1em;
+    li{
+      font-size: medium;
+    }
+
+    @include tablet{
+      background: none;
+      padding: 0;
+      border: none;
+    }
+  }
   .main-navigation ul.menu, .main-navigation ul.nav-menu{
       @include tablet{
   
       max-height: none;
+      width:100%;
       overflow: visible;
-      margin-left: -1em;
       transition: none;
       position: absolute;
       bottom: 1%;
