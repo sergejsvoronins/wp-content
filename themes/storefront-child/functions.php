@@ -185,7 +185,7 @@ function cart_page_notice() {
 	}
 }
 
-function post_type_shops()
+function post_type_stores()
 {
 $supports = array(
 'title', 
@@ -227,5 +227,12 @@ $args = array(
 register_post_type('hitta-till-oss', $args);
 }
  
-add_action('init', 'post_type_shops');
+add_action('init', 'post_type_stores');
+function my_storefront_display_comments($content) {
+    // Remove the user profile image from the comment content.
+    $content = str_replace('<img class="avatar avatar-32 photo" src="', '<img class="avatar avatar-32 photo" style="display: none;" src="', $content);
+  
+    return $content;
+  }
+  add_filter('storefront_display_comments', 'my_storefront_display_comments');
 ?>

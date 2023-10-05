@@ -72,6 +72,39 @@ Version: 4.5.2
   content: "";
 }
 
+@media screen and (min-width: 1200px) {
+  #comments {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #comments h2 {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #comments .comment-list {
+    width: 48%;
+    margin: 1%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #comments .comment-list .comment-respond {
+    width: 100%;
+    margin: 1%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #comments .comment-respond {
+    width: 48%;
+    margin: 1%;
+  }
+}
+#comments .comment-respond textarea {
+  background-color: #fff;
+}
+
 body .site-header {
   position: relative;
   height: 50%;
