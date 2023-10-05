@@ -38,10 +38,10 @@
                 background-color: $btnBg;
                 border-color: $btnBorder;
                 color: $btnText;
-                border-radius: 2%;
+                border-radius: 8%;
                 padding: 1rem 2rem;
                 &:hover {
-                    box-shadow: 10px 5px 10px $lighting;
+                    box-shadow: 0px 0px 20px 8px $lighting;
                 }
             }
         }

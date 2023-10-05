@@ -7,9 +7,11 @@
     
     width:100vw;
     background-repeat: no-repeat;
-  height: auto;
   background-size: cover;
   margin-bottom: 2em;
+    @include tablet{
+      height: 300px;
+    }
 
   .site-branding{
     display: none;
