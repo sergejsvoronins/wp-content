@@ -219,7 +219,7 @@ $args = array(
 'labels' => $labels, // Namn och text som syns i UI:t
 'public' => true, // Om alla användare ska kunna skapa denna post-types
 'query_var' => true, // Skapa en query-variabel för post-typen
-'rewrite' => array('slug' => 'hitta-till-oss'), // Hur man når post-typen (t.ex. som inläggsida) http://localhost/news/
+'rewrite' => array('slug' => 'about/hitta-till-oss'), // Hur man når post-typen (t.ex. som inläggsida) http://localhost/news/
 'has_archive' => true, // Ska post-typen ha arkiv-sida? Likt inlägg
 'hierarchical' => false, // Ska de behandlas som sidor (true) eller inlägg (false)?
 );

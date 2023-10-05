@@ -6,11 +6,10 @@ get_header();
 ?>
 
 <section>
-    hej
     <div class="stores">
         <?php
         query_posts(array(
-            'post_type' => 'hitta-till-oss'
+            'post_type' => 'stores'
         )); ?>
 
         <?php
