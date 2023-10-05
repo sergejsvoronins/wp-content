@@ -12,60 +12,55 @@ Version: 4.5.2
 
 */
 .home-page {
-  height: 500px;
+  height: 100%;
+  height: auto;
   display: flex;
   flex-direction: column;
+  position: relative;
+  color: white;
 }
-@media screen and (min-width: 1200px) {
-  .home-page {
-    flex-direction: row;
-  }
-}
-.home-page .hero-image {
+.home-page__image {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  padding: 1rem;
 }
 @media screen and (min-width: 1200px) {
-  .home-page .hero-image {
+  .home-page__image {
     padding: 1rem;
-    width: 50%;
-    justify-content: center;
   }
 }
-.home-page .hero-image img {
+.home-page__image img {
   width: 100%;
+  height: auto;
   -o-object-position: center;
      object-position: center;
 }
-.home-page .text {
+.home-page__text {
+  width: 100%;
   display: flex;
-  flex: 1;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   height: 100%;
   padding: 1rem;
   gap: 1rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-@media screen and (min-width: 1200px) {
-  .home-page .text {
-    padding: 1rem;
-    width: 50%;
-  }
-}
-.home-page .text a {
+.home-page__text a {
   display: flex;
 }
-.home-page .text a .home-button {
-  background-color: #eeeeee;
-  border-color: #eeeeee;
-  color: #333333;
+.home-page__text a .home-button {
+  background-color: #eedee4;
+  border-color: #edced9;
+  color: #945d70;
+  border-radius: 2%;
   padding: 1rem 2rem;
 }
-.home-page .text a .home-button:hover {
-  background-color: #bdbdbd;
-  border-color: #bdbdbd;
+.home-page__text a .home-button:hover {
+  box-shadow: 10px 5px 10px #faf9e3;
 }
 
 .widget_nav_menu ul li::before {
