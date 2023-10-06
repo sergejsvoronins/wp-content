@@ -98,7 +98,7 @@ get_header(); ?>
                 <?php endif; ?>
             </section> -->
 
-            <?php if (get_row_layout('section_columns')) :
+            <?php if (get_row_layout() == 'section_columns') :
                 $title = get_sub_field('title');
                 $content = get_sub_field('content');
                 $image = get_sub_field('image');
