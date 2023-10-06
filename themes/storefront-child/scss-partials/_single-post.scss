@@ -11,9 +11,13 @@
         }
     }
     .comment-list {
+
         @include desktop {
             width: 48%;
             margin: 1%;
+        }
+        .comment-text {
+            background-color: $bg-two !important;
         }
         .comment-respond {
             @include desktop {
@@ -23,6 +27,7 @@
         }
     }
     .comment-respond {
+        background-color: $bg-two;
         @include desktop {
             width: 48%;
             margin: 1%;
