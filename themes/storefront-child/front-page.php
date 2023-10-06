@@ -3,14 +3,8 @@
 /**
  * The template for displaying the homepage.
  *
- * This page template will display any functions hooked into the `homepage` action.
- * By default this includes a variety of product displays and the page content itself. To change the order or toggle these components
- * use the Homepage Control plugin.
- * https://wordpress.org/plugins/homepage-control/
- *
  * Template name: Homepage
  *
- * @package storefront
  */
 $heroImage = get_field("hero_image");
 $homeHeader = get_field("home_header");
@@ -19,13 +13,14 @@ $homeButton = get_field("home_button");
 
 get_header(); ?>
 
-<div id="primary" class="content-area">
-    <main id="main" class="site-main" role="main">
 
-        <?php
-        if (have_posts()) :
-            while (have_posts()) : the_post(); ?>
-                <section class="home-page">
+<main id="main" class="site-main" role="main">
+    <div id="primary" class="content-area">
+        <section class="home-page">
+            <?php
+            if (have_posts()) :
+                while (have_posts()) : the_post(); ?>
+
                     <article class="home-page__image">
                         <?php if ($heroImage) : ?>
                             <img src="<?php echo $heroImage["url"] ?>" alt="<?php echo $heroImage["alt"] ?>">
@@ -44,20 +39,106 @@ get_header(); ?>
                             </a>
                         <?php endif; ?>
                     </article>
-                </section>
-        <?php
-            endwhile;
-        endif;
-        ?>
+
+            <?php
+                endwhile;
+            endif;
+            ?>
+        </section>
+    </div>
+    <!-- <?php
+            // do_action('homepage');
+            ?> -->
+
+    <?php if (have_rows("page_section")) : ?>
+        <?php while (have_rows("page_section")) : the_row(); ?>
+
+            <!-- <section class="content-area" style="color:black;">
+
+                <?php if (get_row_layout('section_columns')) :
+                    $columns = get_sub_field("section_columns");
+                    $side_value = get_sub_field("image_placement");
+                    $side_labels = array(
+                        'left' => 'Vänster',
+                        'right' => 'Höger'
+                    );
+
+                    // Hämta etiketten baserat på det sparade värdet.
+                    $side_label = isset($side_labels[$side_value]) ? $side_labels[$side_value] : '';
+
+                    print_r($columns);
+                    foreach ($columns as $column) :
+
+                ?>
+                        <div id="primary" class="content-area">
+                            <article class="content-page">
+                                <h3><?php echo $column['title']; ?></h3>
+                                <article>
+                                    <?php if ($side_value === 'left') : ?>
+                                        <article class="content-page__left">
+                                            <img class="content-page__left__img" src="<?php $column['image'] ?>">
+                                            <article class="content-page__left__content">
+                                                <p><?php echo $column['content'] ?></p>
+                                                <a href="<?php echo $columns['link'] ?>">Ta reda på mer!</a>
+                                            </article>
+                                        </article>
+                                    <?php else : ?>
+                                        <article class="content-page__right">
+                                            <article class="content-page__right__content">
+                                                <p><?php echo $column['content'] ?></p>
+                                                <a href="<?php echo $columns['link'] ?>">Ta reda på mooorr!</a>
+                                            </article>
+                                            <img class="content-page__right__img" src="<?php echo $column['image'] ?>">
+                                        </article>
+                                    <?php endif; ?>
+                                </article>
+                        </div>
+
+                    <?php endforeach ?>
+                <?php endif; ?>
+            </section> -->
+
+            <?php if (get_row_layout('section_columns')) :
+                $title = get_sub_field('title');
+                $content = get_sub_field('content');
+                $image = get_sub_field('image');
+                // echo print_r($image);
+                $link = get_sub_field('link');
+                $side = get_sub_field('image_placement');
+            ?>
+                <article style="width: 100%; display: flex;">
+
+                    <?php if ($side == 'left') : ?>
+
+                        <div style="width: 45%;">
+                            <img src="<?php get_sub_field('image'); ?> ">
+
+                        </div>
+                        <div style="width: 45%;">
+                            <p><?php $content ?></p>
+
+                        </div>
+
+                    <?php else : ?>
+                        <div style="width: 45%;">
+                            <p><?php $content ?></p>
+                        </div>
+                        <div style="width: 45%;">
+                            <img src="<?php $image ?> ">
+
+                        </div>
+
+                    <?php endif; ?>
+                </article>
+            <?php endif; ?>
 
 
-    </main>
+        <?php endwhile; ?>
 
-    <?php
-    do_action('homepage');
-    ?>
+    <?php endif; ?>
+</main>
 
-</div><!-- #primary -->
+
 <?php
 get_footer();
 
