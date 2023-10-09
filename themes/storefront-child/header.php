@@ -25,9 +25,6 @@
             <?php
             do_action('storefront_header');
             ?>
-            <!-- <img class="img-icon" src="<?php get_template_directory_uri() ?>/e-commerce/wp-content/themes/storefront-child/assets/sun.svg" alt="Geometrisk form"> -->
-
-
             <?php
             do_action('storefront_before_content');
             ?>

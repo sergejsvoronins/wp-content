@@ -1,0 +1,18 @@
+@import "variables";
+@import "mixins";
+
+.button{
+    border-radius: 5%;
+    &:hover {
+        box-shadow: 0px 0px 20px 8px $lighting;
+    }
+}
+select{
+        background-color: $btnBorder;
+        border: 2px dotted rgb(249, 226, 249);
+        color: aliceblue;
+        border-radius: 8%;
+        padding: 10px;
+        
+      
+}

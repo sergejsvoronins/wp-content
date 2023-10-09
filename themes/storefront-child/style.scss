@@ -16,10 +16,9 @@ Version: 4.5.2
 @import "./scss-partials/variables";
 @import "./scss-partials/homepage";
 @import "./scss-partials/footer";
-@import "./scss-partials/stores-page";
 @import "./scss-partials/header";
-@import "./scss-partials/single-post";
-@import "./scss-partials/contact-page";
+@import "./scss-partials/frontpage";
+@import "./scss-partials/button";
 
 body{
     
@@ -33,21 +32,18 @@ body{
     .woocommerce-info{
         background-color: rgb(230, 161, 172);
     }
-.columns-4 {
-    box-sizing: border-box;
-    box-shadow: 0 4px 3px 0 #ea8bae, 0 18px 40px 0 rgba(253, 229, 249, 0.828);
-        border-radius: 10px;
-}
+    .columns-4 {
+        box-sizing: border-box;
+        box-shadow: 0 4px 3px 0 $boxShadow, 0 18px 40px 0 rgba(253, 229, 249, 0.828);
+            border-radius: 10px;
+    }
 main{
  
     .content-area{
         border: 6px dotted #f7e8f7;
         border-radius: 10px;
         padding: 2rem;
-        .home-page{
-            box-shadow: 0 4px 8px 0 #ea8b8b, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-            border-radius: 5px;
-        }
+       
     }
 
 .site-content{
@@ -67,4 +63,5 @@ main{
 
 }
 }
+
 }

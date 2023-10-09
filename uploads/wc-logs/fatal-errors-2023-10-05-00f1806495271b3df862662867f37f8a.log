@@ -1,0 +1,8 @@
+2023-10-05T18:34:50+00:00 CRITICAL Uncaught Error: Function name must be a string in /Applications/MAMP/htdocs/e-commerce/wp-content/themes/storefront-child/front-page.php:74
+Stack trace:
+#0 /Applications/MAMP/htdocs/e-commerce/wp-includes/template-loader.php(106): include()
+#1 /Applications/MAMP/htdocs/e-commerce/wp-blog-header.php(19): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/e-commerce/index.php(17): require('/Applications/M...')
+#3 {main}
+  thrown i /Applications/MAMP/htdocs/e-commerce/wp-content/themes/storefront-child/front-page.php på rad 74
+

@@ -1,51 +1,93 @@
 .home-page {
-    height: 500px;
+    height: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
-    // padding: 2rem 1rem;
-    @include desktop {
-        flex-direction: row;
-    }
-    .hero-image {
+    position: relative;
+        color: white;
+        box-shadow: 0 4px 8px 0 #ea8b8b, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            border-radius: 5px;
+    &__image {
         width: 100%;
         height: 100%;
         overflow: hidden;
-        padding: 1rem;
-        @include desktop {
+             @include desktop {
             padding: 1rem;
-            width: 50%;
-            justify-content: center;
-        }
+             }
         img {
             width: 100%;
+            height: auto;
             object-position: center;
         }
     }
-    .text {
-        // width: 100%;
-        display: flex;
-        flex: 1;
-        flex-direction: column;
-        justify-content: center;
-        height: 100%;
-        padding: 1rem;
-        gap: 1rem;
-        @include desktop {
+        &__text {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
             padding: 1rem;
-            width: 50%;
-        }
+            gap: 1rem;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+     
         a {
             display: flex;
             .home-button {
-                background-color: #eeeeee;
-                border-color: #eeeeee;
-                color: #333333;
+                background-color: $btnBg;
+                border-color: $btnBorder;
+                color: $btnText;
+                border-radius: 8%;
                 padding: 1rem 2rem;
                 &:hover {
-                    background-color: #bdbdbd;
-                    border-color: #bdbdbd;
+                    box-shadow: 0px 0px 20px 8px $lighting;
                 }
             }
         }
     }
 }
+.content-area{
+.content-page{
+    width: 100%;
+    height:100%;
+        article{
+            width: 100%;
+            height:auto;
+                &__left{
+                    display:flex;
+                    width: 100%;
+                    padding: 2em;
+                    width: 100%;
+                    width: 100%;
+
+                &__content{
+                    width: 49%;
+                    height: auto;
+                    margin:1em;
+                }
+              
+            }
+            &__right{
+                display:flex;
+                width: 100%;
+                padding: 2em;
+                width: 100%;
+                width: 100%;
+
+                &__content{
+                    width: 49%;
+                    height: auto;
+                    margin:1em;
+                }
+                &__img{
+                    max-width: 100px;
+                    max-height: 200px;
+                    margin:1em;
+                }
+
+            }
+        }
+    }}
