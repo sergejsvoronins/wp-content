@@ -1,0 +1,30 @@
+@import "variables";
+@import "mixins";
+
+.team-section{
+    width: 100%;
+    height: auto;
+   
+
+    &__container{
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 4px 8px 0 $boxShadow, 0 6px 20px 0 rgba(246, 169, 169, 0.19);
+        border-radius: 5px;
+        margin-bottom: 5em;
+        text-align: center;
+        @include tablet{
+            flex-direction: row;
+
+            &__text{
+                
+                width: 60%;
+            }
+            &__img{
+                width: 34%
+            }
+        }
+
+    }
+}

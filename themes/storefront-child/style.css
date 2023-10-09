@@ -218,6 +218,31 @@ select {
   padding: 10px;
 }
 
+.team-section {
+  width: 100%;
+  height: auto;
+}
+.team-section__container {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 8px 0 #b389a0, 0 6px 20px 0 rgba(246, 169, 169, 0.19);
+  border-radius: 5px;
+  margin-bottom: 5em;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .team-section__container {
+    flex-direction: row;
+  }
+  .team-section__container__text {
+    width: 60%;
+  }
+  .team-section__container__img {
+    width: 34%;
+  }
+}
+
 body {
   background-color: #ea8b8b;
 }
