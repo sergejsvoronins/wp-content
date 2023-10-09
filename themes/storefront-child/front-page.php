@@ -49,15 +49,18 @@ get_header(); ?>
     <!-- <?php
             // do_action('homepage');
             ?> -->
+    <div class="home-section">
+        <?php if (have_rows("page_section")) : ?>
+            <?php while (have_rows("page_section")) : the_row(); ?>
 
-    <?php if (have_rows("page_section")) : ?>
-        <?php while (have_rows("page_section")) : the_row(); ?>
 
-            <!-- <section class="content-area" style="color:black;">
-
-                <?php if (get_row_layout('section_columns')) :
-                    $columns = get_sub_field("section_columns");
-                    $side_value = get_sub_field("image_placement");
+                <?php if (get_row_layout() == 'section_columns') :
+                    $title = get_sub_field('title');
+                    $content = get_sub_field('content');
+                    $image = get_sub_field('image');
+                    // echo print_r($image);
+                    $link = get_sub_field('link');
+                    $side_value = get_sub_field('image_placement');
                     $side_labels = array(
                         'left' => 'Vänster',
                         'right' => 'Höger'
@@ -66,76 +69,40 @@ get_header(); ?>
                     // Hämta etiketten baserat på det sparade värdet.
                     $side_label = isset($side_labels[$side_value]) ? $side_labels[$side_value] : '';
 
-                    print_r($columns);
-                    foreach ($columns as $column) :
-
                 ?>
-                        <div id="primary" class="content-area">
-                            <article class="content-page">
-                                <h3><?php echo $column['title']; ?></h3>
-                                <article>
-                                    <?php if ($side_value === 'left') : ?>
-                                        <article class="content-page__left">
-                                            <img class="content-page__left__img" src="<?php $column['image'] ?>">
-                                            <article class="content-page__left__content">
-                                                <p><?php echo $column['content'] ?></p>
-                                                <a href="<?php echo $columns['link'] ?>">Ta reda på mer!</a>
-                                            </article>
-                                        </article>
-                                    <?php else : ?>
-                                        <article class="content-page__right">
-                                            <article class="content-page__right__content">
-                                                <p><?php echo $column['content'] ?></p>
-                                                <a href="<?php echo $columns['link'] ?>">Ta reda på mooorr!</a>
-                                            </article>
-                                            <img class="content-page__right__img" src="<?php echo $column['image'] ?>">
-                                        </article>
-                                    <?php endif; ?>
-                                </article>
-                        </div>
+                    <h3 class="home-section__title"> <?php echo $title ?> </h3>
+                    <article class="home-section__box">
 
-                    <?php endforeach ?>
+
+                        <?php if ($side_value == 'left') : ?>
+
+                            <div>
+                                <img src="<?php echo get_sub_field('image'); ?> ">
+
+                            </div>
+                            <div>
+                                <p><?php echo $content ?></p>
+
+                            </div>
+
+                        <?php else : ?>
+                            <div>
+                                <p style="color: 000;"><?php echo $content ?></p>
+                            </div>
+                            <div>
+                                <img src="<?php echo $image ?> ">
+
+                            </div>
+
+                        <?php endif; ?>
+                    </article>
                 <?php endif; ?>
-            </section> -->
-
-            <?php if (get_row_layout() == 'section_columns') :
-                $title = get_sub_field('title');
-                $content = get_sub_field('content');
-                $image = get_sub_field('image');
-                // echo print_r($image);
-                $link = get_sub_field('link');
-                $side = get_sub_field('image_placement');
-            ?>
-                <article style="width: 100%; display: flex;">
-
-                    <?php if ($side == 'left') : ?>
-
-                        <div style="width: 45%;">
-                            <img src="<?php get_sub_field('image'); ?> ">
-
-                        </div>
-                        <div style="width: 45%;">
-                            <p><?php $content ?></p>
-
-                        </div>
-
-                    <?php else : ?>
-                        <div style="width: 45%;">
-                            <p><?php $content ?></p>
-                        </div>
-                        <div style="width: 45%;">
-                            <img src="<?php $image ?> ">
-
-                        </div>
-
-                    <?php endif; ?>
-                </article>
-            <?php endif; ?>
 
 
-        <?php endwhile; ?>
+            <?php endwhile; ?>
 
-    <?php endif; ?>
+        <?php endif; ?>
+    </div>
 </main>
 
 

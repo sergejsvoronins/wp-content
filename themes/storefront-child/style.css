@@ -18,6 +18,8 @@ Version: 4.5.2
   flex-direction: column;
   position: relative;
   color: white;
+  box-shadow: 0 4px 8px 0 #ea8b8b, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
 }
 .home-page__image {
   width: 100%;
@@ -64,7 +66,6 @@ Version: 4.5.2
 }
 
 .content-area .content-page {
-  outline: 10px solid red;
   width: 100%;
   height: 100%;
 }
@@ -167,41 +168,54 @@ Version: 4.5.2
   }
 }
 
-.content-page {
+.home-section {
   width: 100%;
-  outline: 10px solid red;
+  height: auto;
+  text-align: center;
+  padding-top: 2em;
+}
+.home-section__title {
+  color: purple;
+}
+.home-section__box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  margin-bottom: 2em;
+  padding: 2em;
+  box-shadow: 0 4px 8px 0 #b389a0, 0 6px 20px 0 rgba(246, 169, 169, 0.19);
+  border-radius: 5px;
 }
 @media screen and (min-width: 700px) {
-  .content-page article {
-    display: flex;
-    width: 100%;
+  .home-section__box {
+    flex-direction: row;
   }
-  .content-page article__left {
-    width: 100%;
+}
+.home-section__box div {
+  width: 90%;
+}
+@media screen and (min-width: 700px) {
+  .home-section__box div {
+    width: 47%;
   }
-  .content-page article__left__content {
-    width: 49%;
-    height: auto;
-    margin: 1em;
-  }
-  .content-page article__left__img {
-    width: 100px;
-    height: auto;
-    margin: 1em;
-  }
-  .content-page article__right {
-    width: 100%;
-  }
-  .content-page article__right__content {
-    width: 49%;
-    height: auto;
-    margin: 1em;
-  }
-  .content-page article__right__img {
-    width: 100px;
-    height: auto;
-    margin: 1em;
-  }
+}
+
+.button {
+  border-radius: 5%;
+}
+.button:hover {
+  box-shadow: 0px 0px 20px 8px #edf3f5;
+}
+
+select {
+  background-color: #edced9;
+  border: 2px dotted rgb(249, 226, 249);
+  color: aliceblue;
+  border-radius: 8%;
+  padding: 10px;
 }
 
 body {
@@ -218,16 +232,12 @@ body .woocommerce-info {
 }
 body .columns-4 {
   box-sizing: border-box;
-  box-shadow: 0 4px 3px 0 #ea8bae, 0 18px 40px 0 rgba(253, 229, 249, 0.828);
+  box-shadow: 0 4px 3px 0 #b389a0, 0 18px 40px 0 rgba(253, 229, 249, 0.828);
   border-radius: 10px;
 }
 body main .content-area {
   border: 6px dotted #f7e8f7;
   border-radius: 10px;
-}
-body main .content-area .home-page {
-  box-shadow: 0 4px 8px 0 #ea8b8b, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border-radius: 5px;
 }
 body main .site-content {
   width: 99%;
