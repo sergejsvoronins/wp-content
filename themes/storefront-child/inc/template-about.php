@@ -8,19 +8,21 @@ get_header();
     <?php the_title(); ?>
 </h1>
 <?php the_content(); ?>
-<section>
+<section class="team-section">
     <h2><?php the_field('title') ?></h2>
     <?php if (have_rows('members')) :
         while (have_rows('members')) : the_row();
     ?>
-            <section>
-                <h4>
-                    <?php the_sub_field('name'); ?>
-                </h4>
-                <p>
-                    <?php the_sub_field('description') ?>
-                <p>
-                    <img src="<?php the_sub_field('image') ?>">
+            <section class="team-section__container">
+                <article class="team-section__container__text">
+                    <h4>
+                        <?php the_sub_field('name'); ?>
+                    </h4>
+                    <p>
+                        <?php the_sub_field('description') ?>
+                    <p>
+                </article>
+                <img class="team-section__container__img" src="<?php the_sub_field('image') ?>">
             </section>
     <?php
         endwhile;

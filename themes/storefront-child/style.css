@@ -114,7 +114,7 @@ Version: 4.5.2
   background-size: cover;
   margin-bottom: 2em;
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 768px) {
   .site-header {
     height: 300px;
   }
@@ -131,14 +131,14 @@ Version: 4.5.2
 .site-header .main-navigation ul li {
   font-size: medium;
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 768px) {
   .site-header .main-navigation ul {
     background: none;
     padding: 0;
     border: none;
   }
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 768px) {
   .site-header .main-navigation ul.menu, .site-header .main-navigation ul.nav-menu {
     max-height: none;
     width: 100%;
@@ -155,7 +155,7 @@ Version: 4.5.2
     left: 35%;
   }
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 768px) {
   .site-header {
     height: 380px;
     margin-bottom: 4em;
@@ -188,7 +188,7 @@ Version: 4.5.2
   box-shadow: 0 4px 8px 0 #b389a0, 0 6px 20px 0 rgba(246, 169, 169, 0.19);
   border-radius: 5px;
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 768px) {
   .home-section__box {
     flex-direction: row;
   }
@@ -196,7 +196,7 @@ Version: 4.5.2
 .home-section__box div {
   width: 90%;
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 768px) {
   .home-section__box div {
     width: 47%;
   }
@@ -215,6 +215,35 @@ select {
   color: aliceblue;
   border-radius: 8%;
   padding: 10px;
+}
+
+.added_to_cart {
+  display: none;
+}
+
+.team-section {
+  width: 100%;
+  height: auto;
+}
+.team-section__container {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 8px 0 #b389a0, 0 6px 20px 0 rgba(246, 169, 169, 0.19);
+  border-radius: 5px;
+  margin-bottom: 5em;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .team-section__container {
+    flex-direction: row;
+  }
+  .team-section__container__text {
+    width: 60%;
+  }
+  .team-section__container__img {
+    width: 34%;
+  }
 }
 
 body {
@@ -237,6 +266,7 @@ body .columns-4 {
 body main .content-area {
   border: 6px dotted #f7e8f7;
   border-radius: 10px;
+  padding: 2rem;
 }
 body main .site-content {
   width: 99%;

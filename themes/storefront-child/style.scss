@@ -19,6 +19,7 @@ Version: 4.5.2
 @import "./scss-partials/header";
 @import "./scss-partials/frontpage";
 @import "./scss-partials/button";
+@import "./scss-partials/team-section";
 
 body{
     
@@ -42,6 +43,7 @@ main{
     .content-area{
         border: 6px dotted #f7e8f7;
         border-radius: 10px;
+        padding: 2rem;
        
     }
 

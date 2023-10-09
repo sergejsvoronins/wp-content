@@ -1,0 +1,19 @@
+2023-10-05T09:52:20+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "jk_custom_storefront_post_content" not found or invalid function name in C:\xampp\htdocs\wordpress-artshop\wp-includes\class-wp-hook.php:310
+Stack trace:
+#0 C:\xampp\htdocs\wordpress-artshop\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#1 C:\xampp\htdocs\wordpress-artshop\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#2 C:\xampp\htdocs\wordpress-artshop\wp-content\themes\storefront\content.php(20): do_action('storefront_loop...')
+#3 C:\xampp\htdocs\wordpress-artshop\wp-includes\template.php(787): require('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\wordpress-artshop\wp-includes\template.php(720): load_template('C:\\xampp\\htdocs...', false, Array)
+#5 C:\xampp\htdocs\wordpress-artshop\wp-includes\general-template.php(206): locate_template(Array, true, false, Array)
+#6 C:\xampp\htdocs\wordpress-artshop\wp-content\themes\storefront\loop.php(21): get_template_part('content', '')
+#7 C:\xampp\htdocs\wordpress-artshop\wp-includes\template.php(787): require('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\wordpress-artshop\wp-includes\template.php(720): load_template('C:\\xampp\\htdocs...', false, Array)
+#9 C:\xampp\htdocs\wordpress-artshop\wp-includes\general-template.php(206): locate_template(Array, true, false, Array)
+#10 C:\xampp\htdocs\wordpress-artshop\wp-content\themes\storefront-child\index.php(11): get_template_part('loop')
+#11 C:\xampp\htdocs\wordpress-artshop\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\wordpress-artshop\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#13 C:\xampp\htdocs\wordpress-artshop\index.php(17): require('C:\\xampp\\htdocs...')
+#14 {main}
+  thrown i C:\xampp\htdocs\wordpress-artshop\wp-includes\class-wp-hook.php på rad 310
+

@@ -1,0 +1,40 @@
+
+#comments {
+    @include desktop {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    h2 {
+        @include desktop {
+            width: 100%;
+        }
+    }
+    .comment-list {
+
+        @include desktop {
+            width: 48%;
+            margin: 1%;
+        }
+        .comment-text {
+            background-color: $bg-two !important;
+        }
+        .comment-respond {
+            @include desktop {
+                width: 100%;
+                margin: 1%;
+            }
+        }
+    }
+    .comment-respond {
+        background-color: $bg-two;
+        @include desktop {
+            width: 48%;
+            margin: 1%;
+        }
+        textarea {
+            background-color: #fff;
+        }
+    }
+
+}

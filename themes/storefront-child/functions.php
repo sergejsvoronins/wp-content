@@ -185,7 +185,7 @@ function cart_page_notice() {
 	}
 }
 
-function post_type_shops()
+function post_type_stores()
 {
 $supports = array(
 'title', 
@@ -219,13 +219,14 @@ $args = array(
 'labels' => $labels, // Namn och text som syns i UI:t
 'public' => true, // Om alla användare ska kunna skapa denna post-types
 'query_var' => true, // Skapa en query-variabel för post-typen
-'rewrite' => array('slug' => 'about/hitta-till-oss'), // Hur man når post-typen (t.ex. som inläggsida) http://localhost/news/
+'rewrite' => array('slug' => 'about/stores'), // Hur man når post-typen (t.ex. som inläggsida) http://localhost/news/
 'has_archive' => true, // Ska post-typen ha arkiv-sida? Likt inlägg
-'hierarchical' => false, // Ska de behandlas som sidor (true) eller inlägg (false)?
+'hierarchical' => true, // Ska de behandlas som sidor (true) eller inlägg (false)?
+'menu_icon' => 'dashicons-store'
 );
  
-register_post_type('hitta-till-oss', $args);
+register_post_type('stores', $args);
 }
  
-add_action('init', 'post_type_shops');
+add_action('init', 'post_type_stores');
 ?>
