@@ -59,7 +59,7 @@ border-bottom: 0;
 font-weight: bold;
 line-height: 100%;
 vertical-align: middle;
-font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+font-family: Tahoma, sans-serif, Roboto, Arial, sans-serif;
 }
 
 #template_header h1,
@@ -81,7 +81,7 @@ border-radius: 6px;
 #template_footer #credit {
 border: 0;
 color: <?php echo esc_attr($text_lighter_40); ?>;
-font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+font-family: "Optima", Roboto, Arial, sans-serif;
 font-size: 12px;
 line-height: 150%;
 text-align: center;
@@ -130,7 +130,7 @@ margin: 0 0 16px;
 
 #body_content_inner {
 color: <?php echo esc_attr($text_lighter_20); ?>;
-font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+font-family: Tahoma, sans-serif;
 font-size: 14px;
 line-height: 150%;
 text-align: <?php echo is_rtl() ? 'right' : 'left'; ?>;
@@ -150,7 +150,7 @@ border: 1px solid <?php echo esc_attr($body_darker_10); ?>;
 
 .text {
 color: <?php echo esc_attr($text); ?>;
-font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+font-family: Tahoma, sans serif;
 }
 
 .link {
@@ -187,7 +187,7 @@ text-align: <?php echo is_rtl() ? 'right' : 'left'; ?>;
 h3 {
 color: <?php echo esc_attr($base); ?>;
 display: block;
-font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+font-family: "Tahoma", Roboto, Arial, sans-serif;
 font-size: 16px;
 font-weight: bold;
 line-height: 130%;
