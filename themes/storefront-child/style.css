@@ -247,6 +247,44 @@ select {
   }
 }
 
+.stores .store-single {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  padding: 2rem 0;
+}
+@media screen and (min-width: 768px) {
+  .stores .store-single {
+    flex-direction: row;
+  }
+}
+.stores .store-single h2 {
+  width: 100%;
+}
+.stores .store-single .store-meta {
+  width: 100%;
+}
+.stores .store-single .store-meta i {
+  padding-right: 10px;
+}
+@media screen and (min-width: 768px) {
+  .stores .store-single .store-meta {
+    width: 50%;
+  }
+}
+.stores .store-single .store-image {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .stores .store-single .store-image {
+    width: 50%;
+  }
+}
+.stores .store-single .store-image img {
+  height: 100%;
+}
+
 body {
   background-color: #ea8b8b;
 }
