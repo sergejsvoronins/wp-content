@@ -1,0 +1,23 @@
+.contact {
+    article {
+        div {
+            display: flex;
+            justify-content: center;
+            form {
+                width: 100%;
+                @include tablet {
+                    width: 50%;
+                }
+                @include desktop {
+                    width: 40%;
+                }
+                * {
+                    width: 100%;
+                }
+                input[type="submit"] {
+                    width: auto;
+                }
+            }
+        }
+    }
+}

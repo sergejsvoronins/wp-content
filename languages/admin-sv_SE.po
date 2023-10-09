@@ -2,12 +2,12 @@
 # This file is distributed under the same license as the WordPress - 6.3.x - Development - Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2023-09-22 10:20:10+0000\n"
+"PO-Revision-Date: 2023-10-05 17:36:02+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: GlotPress/4.0.0-alpha.8\n"
+"X-Generator: GlotPress/4.0.0-alpha.9\n"
 "Language: sv_SE\n"
 "Project-Id-Version: WordPress - 6.3.x - Development - Administration\n"
 
@@ -36,6 +36,18 @@ msgstr "1"
 msgctxt "default GMT offset or timezone string"
 msgid "0"
 msgstr "Europe/Stockholm"
+
+#. translators: 1: Current PHP version, 2: PHP version required by the new
+#. plugin version.
+#: wp-admin/includes/class-plugin-upgrader.php:369
+msgid "The PHP version on your server is %1$s, however the new plugin version requires %2$s."
+msgstr "PHP-versionen på din server är %1$s, men den nya tilläggsversionen kräver %2$s."
+
+#. translators: 1: Current WordPress version, 2: WordPress version required by
+#. the new plugin version.
+#: wp-admin/includes/class-plugin-upgrader.php:355
+msgid "Your WordPress version is %1$s, however the new plugin version requires %2$s."
+msgstr "Din WordPress-version är %1$s, men den nya tilläggsversionen kräver %2$s."
 
 #. translators: %s: WordPress version.
 #: wp-admin/about.php:68
@@ -2935,14 +2947,14 @@ msgstr "Du laddar upp en äldre version av ett befintligt tillägg. Du kan forts
 #. translators: 1: Current WordPress version, 2: Version required by the
 #. uploaded plugin.
 #: wp-admin/includes/class-plugin-installer-skin.php:280
-#: wp-admin/includes/class-plugin-upgrader.php:476
+#: wp-admin/includes/class-plugin-upgrader.php:512
 msgid "Your WordPress version is %1$s, however the uploaded plugin requires %2$s."
 msgstr "Din WordPress-version är %1$s, men det uppladdade tillägget kräver %2$s."
 
 #. translators: 1: Current PHP version, 2: Version required by the uploaded
 #. plugin.
 #: wp-admin/includes/class-plugin-installer-skin.php:268
-#: wp-admin/includes/class-plugin-upgrader.php:465
+#: wp-admin/includes/class-plugin-upgrader.php:501
 msgid "The PHP version on your server is %1$s, however the uploaded plugin requires %2$s."
 msgstr "PHP-versionen på din server är %1$s, men det uppladdade tillägget kräver %2$s."
 
@@ -11432,7 +11444,7 @@ msgstr ""
 msgid "Core Developer"
 msgstr "Kärnutvecklare"
 
-#: wp-admin/includes/class-plugin-upgrader.php:456
+#: wp-admin/includes/class-plugin-upgrader.php:492
 msgid "No valid plugins were found."
 msgstr "Inget giltigt tillägg hittades."
 

@@ -6,11 +6,11 @@ get_header();
 ?>
 
 
-<section>
+<section class="contact">
     <h1>
         <?php the_title(); ?>
     </h1>
-    <article style="max-width:400px">
+    <article>
         <?php
         the_content();
         ?>

@@ -1,0 +1,62 @@
+@import "mixins";
+@import "variables";
+
+
+.site-header{
+    position: relative;
+    
+    width:100vw;
+    background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 2em;
+    @include tablet{
+      height: 300px;
+    }
+
+  .site-branding{
+    display: none;
+  }
+  .main-navigation ul{
+    background-color: $offwhite;
+    opacity: 0.7;
+    width: 50%;
+    padding-left: 1em;
+    li{
+      font-size: medium;
+    }
+
+    @include tablet{
+      background: none;
+      padding: 0;
+      border: none;
+    }
+  }
+  .main-navigation ul.menu, .main-navigation ul.nav-menu{
+      @include tablet{
+  
+      max-height: none;
+      width:100%;
+      overflow: visible;
+      transition: none;
+      position: absolute;
+      bottom: 1%;
+      left:28%;
+      
+        
+      }
+      @include desktop{
+        bottom: 2em;
+        left:35%;
+  }
+  }
+  @include tablet{
+    height: 380px;
+    margin-bottom: 4em;
+
+  }
+@include desktop{
+  height: 350px;
+  margin-bottom: 4.6em;
+}
+
+}
