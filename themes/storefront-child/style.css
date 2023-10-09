@@ -288,6 +288,9 @@ select {
 body {
   background-color: #ea8b8b;
 }
+body h1, body h2, body h3 {
+  font-family: Optima, sans serif;
+}
 body .woocommerce-message, body .woocommerce-info, body .woocommerce-error, body .woocommerce-noreviews, body p.no-comments {
   background-color: rgb(192, 137, 146);
 }

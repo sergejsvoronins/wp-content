@@ -23,6 +23,9 @@ Version: 4.5.2
 @import "./scss-partials/stores-page";
 
 body{
+    h1, h2, h3{
+        font-family: Optima, sans serif;
+    }
     
     .woocommerce-message, .woocommerce-info, .woocommerce-error, .woocommerce-noreviews, p.no-comments {
         background-color: $messageBg;
