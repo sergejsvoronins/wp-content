@@ -1,24 +1,36 @@
 @import "variables";
 @import "mixins";
 
-// section{
-//     text-align: center;
-    
-// .store-wrapper{
-//     margin: 0;
-//     padding: 2em;
-//     height: auto;
-//     width: 80%;
-//     background-color: rgb(240, 245, 245);
-//     border: 2px solid orange;
-//     border-radius: 7%;
-//     display: flex;
-// article{
-//     flex-direction: row;
-// }
-//     img{
-//         width: 30%;
-//         height: auto;
-//     }
-// }
-// }
+.stores {
+    .store-single {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        border-bottom: 1px solid rgba(0,0,0,.05);
+        padding: 2rem 0;
+        @include tablet {
+            flex-direction: row;
+        }
+        h2 {
+            width: 100%;
+        }
+        .store-meta {
+            width: 100%;
+            i{
+                padding-right: 10px;
+            }
+            @include tablet {
+                width: 50%;
+            }
+        }
+        .store-image {
+            width: 100%;
+            @include tablet {
+                width: 50%;
+            }
+            img {
+                height: 100%;
+            }
+        }
+    }
+}
