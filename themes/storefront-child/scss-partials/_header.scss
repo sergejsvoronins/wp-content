@@ -7,12 +7,18 @@
     
     width:100%;
     background-repeat: no-repeat;
-  background-size: cover;
-  margin-bottom: 2em;
+    background-size: cover;
+    margin-bottom: 2em;
     @include tablet{
       height: 300px;
     }
-
+    .storefront-primary-navigation {
+      @include tablet{
+        position: relative;
+        width: 100%;
+        bottom: -120px;
+      }
+    }
   .site-branding{
     display: none;
   }
@@ -39,7 +45,7 @@
       width:100%;
       overflow: visible;
       transition: none;
-      position: absolute;
+      // position: absolute;
       bottom: 1%;
       left:28%;
       

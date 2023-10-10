@@ -119,6 +119,13 @@ Version: 4.5.2
     height: 300px;
   }
 }
+@media screen and (min-width: 768px) {
+  .site-header .storefront-primary-navigation {
+    position: relative;
+    width: 100%;
+    bottom: -120px;
+  }
+}
 .site-header .site-branding {
   display: none;
 }
@@ -144,7 +151,6 @@ Version: 4.5.2
     width: 100%;
     overflow: visible;
     transition: none;
-    position: absolute;
     bottom: 1%;
     left: 28%;
   }
@@ -287,6 +293,69 @@ select {
 }
 .stores .store-single .store-image img {
   height: 100%;
+}
+
+@media screen and (min-width: 1200px) {
+  #comments {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #comments h2 {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #comments .comment-list {
+    width: 48%;
+    margin: 1%;
+  }
+}
+#comments .comment-list .comment-text {
+  background-color: #fff4f5 !important;
+}
+@media screen and (min-width: 1200px) {
+  #comments .comment-list .comment-respond {
+    width: 100%;
+    margin: 1%;
+  }
+}
+#comments .comment-respond {
+  background-color: #fff4f5;
+}
+@media screen and (min-width: 1200px) {
+  #comments .comment-respond {
+    width: 48%;
+    margin: 1%;
+  }
+}
+#comments .comment-respond textarea {
+  background-color: #fff;
+}
+
+.contact article div {
+  display: flex;
+  justify-content: center;
+}
+.contact article div form {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .contact article div form {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact article div form {
+    width: 40%;
+  }
+}
+.contact article div form * {
+  width: 100%;
+}
+.contact article div form input[type=submit] {
+  width: auto;
 }
 
 body {
