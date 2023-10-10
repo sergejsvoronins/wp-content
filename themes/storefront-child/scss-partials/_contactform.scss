@@ -1,0 +1,27 @@
+@import "variables";
+@import "mixins";
+
+.contact-section{
+    input{
+        background-color: $inputBg;
+        border-radius: 5px;
+    }
+    input:focus{
+        background-color: $inputBg;
+        border-radius: 5px;
+    }
+    textarea{
+        background-color: $inputBg;
+        border-radius: 5px;
+
+    }
+    textarea:focus{
+        background-color: $inputBg;
+        border-radius: 5px;
+    }
+
+    @include desktop{
+        width: 70%;
+
+    }
+}

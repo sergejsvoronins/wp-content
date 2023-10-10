@@ -178,7 +178,7 @@ function cart_page_notice() {
     $min_amount  = (int)get_free_shipping_min_amount();
 	$current = WC()->cart->subtotal;
 	if ( $current < $min_amount ) {
-		$added_text = '<div class="woocommerce-message">Köp produkter ytterligare för ' . wc_price( $min_amount - $current ) . ' till gratis frakt!<br/>'; 
+		$added_text = '<div class="woocommerce-message">Köp produkter för ' . wc_price( $min_amount - $current ) . ' till gratis frakt!<br/>'; 
 		$return_to = wc_get_page_permalink( 'shop' );
 		$notice = sprintf( '%s<a href="%s">%s</a>', $added_text, esc_url( $return_to ), 'Continue shopping</div>' ); 
 		echo $notice;
@@ -229,4 +229,3 @@ register_post_type('stores', $args);
 }
  
 add_action('init', 'post_type_stores');
-?>
