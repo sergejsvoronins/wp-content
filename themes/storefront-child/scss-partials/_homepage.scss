@@ -1,49 +1,64 @@
+@import "variables";
+@import "mixins";
+
 .home-page {
     height: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
+    text-align: center;
     position: relative;
-        color: white;
-    &__image {
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
-             @include desktop {
-            padding: 1rem;
-             }
-        img {
+    background-color: #b389a00f;
+    box-shadow: 0 4px 8px 0 $btnBorder, 0 6px 20px 0 rgba(246, 169, 169, 0.19);
+    border-radius: 5px;
+
+    padding: 1.4em;
+    @include tablet{
+        padding: 0px;
+        &__image {
+            
             width: 100%;
-            height: auto;
-            object-position: center;
+            height: 100%;
+            overflow: hidden;
+            box-shadow: 0 4px 8px 0 #b389a0, 0 6px 20px 0 rgba(246, 169, 169, 0.19);
+            img {
+                width: 100%;
+                height: auto;
+                object-position: center;
+                
+            }
+        }
+            &__text {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                padding: 1rem;
+                gap: 1rem;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                color: $offwhite;
+                transform: translate(-50%, -50%);
+                
+        
+            
         }
     }
-        &__text {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100%;
-            padding: 1rem;
-            gap: 1rem;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            
-            transform: translate(-50%, -50%);
-     
-        a {
-            display: flex;
-            .home-button {
-                background-color: $btnBg;
-                border-color: $btnBorder;
-                color: $btnText;
-                border-radius: 8%;
-                padding: 1rem 2rem;
-                &:hover {
-                    box-shadow: 0px 0px 20px 8px $lighting;
-                }
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .home-button {
+            background-color: $btnBg;
+            border-color: $btnBorder;
+            color: $btnText;
+            border-radius: 8%;
+            padding: 1rem 2rem;
+            &:hover {
+                box-shadow: 0px 0px 20px 8px $lighting;
             }
         }
     }
