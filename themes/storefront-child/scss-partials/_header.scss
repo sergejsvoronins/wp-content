@@ -4,34 +4,30 @@
 
 .site-header{
     position: relative;
-    
     width:100%;
     background-repeat: no-repeat;
-  background-size: cover;
-  margin-bottom: 2em;
-    @include tablet{
-      height: 300px;
-    }
+    background-size: cover;
+    margin-bottom: 2em;
+      @include tablet{
+        height: 300px;
+      }
 
   .site-branding{
     display: none;
   }
   .main-navigation ul{
     background-color: $offwhite;
-    opacity: 0.7;
     width: 100%;
     padding-left: 1em;
-    li{
-      font-size: medium;
-    }
-    
-
-    @include tablet{
-      background: none;
-      padding: 0;
-      border: none;
-    }
-  }
+      li{
+        font-size: medium;
+        }
+        @include tablet{
+          background: none;
+          padding: 0;
+          border: none;
+        }
+   }
   .main-navigation ul.menu, .main-navigation ul.nav-menu{
       @include tablet{
   
@@ -41,14 +37,9 @@
       transition: none;
       position: absolute;
       bottom: 1%;
-      left:28%;
-      
-      
-        
       }
       @include desktop{
         bottom: 2em;
-        left:35%;
   }
   }
   @include tablet{
@@ -56,12 +47,20 @@
     margin-bottom: 4em;
 
   }
-@include desktop{
-  height: 350px;
-  margin-bottom: 4.6em;
-}
-@include tablet{
-  
+  @include desktop{
+    height: 350px;
+    margin-bottom: 4.6em;
   }
 
+}
+
+@include tablet{
+.site-header-cart{
+  position: absolute;
+  right: 1em;
+  background-color: pink;
+  bottom: 0.5em;
+  opacity: 0.4;
+  border-radius: 10px;
+}
 }
