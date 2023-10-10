@@ -48,6 +48,10 @@ body{
         box-shadow: 0 4px 3px 0 $boxShadow, 0 18px 40px 0 rgba(253, 229, 249, 0.828);
             border-radius: 10px;
     }
+    a:focus,input:focus,textarea:focus,button:focus
+        {
+            outline: none;
+        }
 main{
  
     .content-area{

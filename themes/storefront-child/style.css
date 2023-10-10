@@ -523,6 +523,9 @@ body .columns-4 {
   box-shadow: 0 4px 3px 0 #b389a0, 0 18px 40px 0 rgba(253, 229, 249, 0.828);
   border-radius: 10px;
 }
+body a:focus, body input:focus, body textarea:focus, body button:focus {
+  outline: none;
+}
 body main .content-area {
   border: 6px dotted #f7e8f7;
   border-radius: 10px;
