@@ -229,3 +229,14 @@ register_post_type('stores', $args);
 }
  
 add_action('init', 'post_type_stores');
+
+add_action( 'init', 'remove_storefront_header_search' );
+
+function remove_storefront_header_search() {
+
+remove_action( 'storefront_header', 'storefront_product_search', 40 );
+
+}
+
+
+?>

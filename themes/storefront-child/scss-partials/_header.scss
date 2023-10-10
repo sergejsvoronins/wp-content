@@ -13,9 +13,12 @@
       }
     .storefront-primary-navigation {
       @include tablet{
-        position: relative;
+        position: absolute;
         width: 100%;
-        bottom: -120px;
+        bottom: 0;
+      }
+      @include desktop{
+        bottom: 2rem;
       }
     }
   .site-branding{
@@ -62,11 +65,11 @@
 
 @include tablet{
 .site-header-cart{
-  position: absolute;
-  right: 1em;
-  background-color: rgba(255, 192, 203, 0.103);
-  bottom: 0.5em;
-  // opacity: 0.4;
-  border-radius: 10px;
+  // position: absolute;
+  // right: 1em;
+  // background-color: rgba(255, 192, 203, 0.103);
+  // bottom: 0.5em;
+  // // opacity: 0.4;
+  // border-radius: 10px;
 }
 }

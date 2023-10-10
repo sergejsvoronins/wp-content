@@ -121,9 +121,14 @@ Version: 4.5.2
 }
 @media screen and (min-width: 768px) {
   .site-header .storefront-primary-navigation {
-    position: relative;
+    position: absolute;
     width: 100%;
-    bottom: -120px;
+    bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .site-header .storefront-primary-navigation {
+    bottom: 2rem;
   }
 }
 .site-header .site-branding {
@@ -171,15 +176,6 @@ Version: 4.5.2
   }
 }
 
-@media screen and (min-width: 768px) {
-  .site-header-cart {
-    position: absolute;
-    right: 1em;
-    background-color: rgba(255, 192, 203, 0.103);
-    bottom: 0.5em;
-    border-radius: 10px;
-  }
-}
 .home-section {
   width: 100%;
   height: auto;
@@ -500,46 +496,8 @@ select {
   border-radius: 5px;
 }
 
-body h1, body h2, body h3 {
-  font-family: Optima, sans serif;
-}
-
-.stores .store-single {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-  padding: 2rem 0;
-}
-@media screen and (min-width: 768px) {
-  .stores .store-single {
-    flex-direction: row;
-  }
-}
-.stores .store-single h2 {
-  width: 100%;
-}
-.stores .store-single .store-meta {
-  width: 100%;
-}
-.stores .store-single .store-meta i {
-  padding-right: 10px;
-}
-@media screen and (min-width: 768px) {
-  .stores .store-single .store-meta {
-    width: 50%;
-  }
-}
-.stores .store-single .store-image {
-  width: 100%;
-}
-@media screen and (min-width: 768px) {
-  .stores .store-single .store-image {
-    width: 50%;
-  }
-}
-.stores .store-single .store-image img {
-  height: 100%;
+.widget-area .widget {
+  margin: 0;
 }
 
 body h1, body h2, body h3 {
