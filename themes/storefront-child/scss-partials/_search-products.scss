@@ -1,7 +1,21 @@
+
+@import "variables";
+@import "mixins";
 .search-products {
     max-width: 66.4989378333em;
     margin-left: auto;
     margin-right: auto;
     padding: 0 2.617924em;
     box-sizing: content-box;
+    .wp-block-search__input{
+        background-color: $inputBg;
+        border-radius: 6px;
+        padding: 1em;
+        color: $darkp;
+    
+       }
+       .wp-block-search__input:focus{
+        background-color: $inputBg;
+        
+       }
 }
