@@ -169,9 +169,8 @@ Version: 4.5.2
   .site-header-cart {
     position: absolute;
     right: 1em;
-    background-color: pink;
+    background-color: rgba(255, 192, 203, 0.103);
     bottom: 0.5em;
-    opacity: 0.4;
     border-radius: 10px;
   }
 }
@@ -256,28 +255,6 @@ select {
   }
   .team-section__container__img {
     width: 34%;
-  }
-}
-
-.contact-section input {
-  background-color: #f6e2e9;
-  border-radius: 5px;
-}
-.contact-section input:focus {
-  background-color: #f6e2e9;
-  border-radius: 5px;
-}
-.contact-section textarea {
-  background-color: #f6e2e9;
-  border-radius: 5px;
-}
-.contact-section textarea:focus {
-  background-color: #f6e2e9;
-  border-radius: 5px;
-}
-@media screen and (min-width: 1200px) {
-  .contact-section {
-    width: 70%;
   }
 }
 
