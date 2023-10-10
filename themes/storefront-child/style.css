@@ -500,6 +500,14 @@ select {
   margin: 0;
 }
 
+.search-products {
+  max-width: 66.4989378333em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 2.617924em;
+  box-sizing: content-box;
+}
+
 body h1, body h2, body h3 {
   font-family: Optima, sans serif;
 }
