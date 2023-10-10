@@ -29,6 +29,15 @@
             do_action('storefront_before_content');
             ?>
         </header>
+        <?php if (is_shop()) : ?>
+
+            <div class="search-products">
+
+                <?php dynamic_sidebar('Sidebar Widget Area'); ?>
+
+            </div>
+
+        <?php endif; ?>
         <div id="content" class="site-content" tabindex="-1">
             <div class="col-full">
 

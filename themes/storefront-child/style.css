@@ -127,9 +127,14 @@ Version: 4.5.2
 }
 @media screen and (min-width: 768px) {
   .site-header .storefront-primary-navigation {
-    position: relative;
+    position: absolute;
     width: 100%;
-    bottom: -120px;
+    bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .site-header .storefront-primary-navigation {
+    bottom: 2rem;
   }
 }
 .site-header .site-branding {
@@ -177,15 +182,6 @@ Version: 4.5.2
   }
 }
 
-@media screen and (min-width: 768px) {
-  .site-header-cart {
-    position: absolute;
-    right: 1em;
-    background-color: rgba(255, 192, 203, 0.103);
-    bottom: 0.5em;
-    border-radius: 10px;
-  }
-}
 .home-section {
   width: 100%;
   height: auto;
@@ -221,22 +217,20 @@ Version: 4.5.2
   }
 }
 
-.button {
+button {
   border-radius: 5%;
 }
-.button:hover {
+button .button:hover {
   box-shadow: 0px 0px 20px 8px #edf3f5;
 }
-
-select {
+button select {
   background-color: #edced9;
   border: 2px dotted rgb(249, 226, 249);
   color: aliceblue;
   border-radius: 8%;
   padding: 10px;
 }
-
-.added_to_cart {
+button .added_to_cart {
   display: none;
 }
 
@@ -388,6 +382,145 @@ select {
   height: 100%;
 }
 
+.stores .store-single {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  padding: 2rem 0;
+}
+@media screen and (min-width: 768px) {
+  .stores .store-single {
+    flex-direction: row;
+  }
+}
+.stores .store-single h2 {
+  width: 100%;
+}
+.stores .store-single .store-meta {
+  width: 100%;
+}
+.stores .store-single .store-meta i {
+  padding-right: 10px;
+}
+@media screen and (min-width: 768px) {
+  .stores .store-single .store-meta {
+    width: 50%;
+  }
+}
+.stores .store-single .store-image {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .stores .store-single .store-image {
+    width: 50%;
+  }
+}
+.stores .store-single .store-image img {
+  height: 100%;
+}
+
+@media screen and (min-width: 1200px) {
+  #comments {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #comments h2 {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #comments .comment-list {
+    width: 48%;
+    margin: 1%;
+  }
+}
+#comments .comment-list .comment-text {
+  background-color: #fff4f5 !important;
+}
+@media screen and (min-width: 1200px) {
+  #comments .comment-list .comment-respond {
+    width: 100%;
+    margin: 1%;
+  }
+}
+#comments .comment-respond {
+  background-color: #fff4f5;
+}
+@media screen and (min-width: 1200px) {
+  #comments .comment-respond {
+    width: 48%;
+    margin: 1%;
+  }
+}
+#comments .comment-respond textarea {
+  background-color: #fff;
+}
+
+.contact article div {
+  display: flex;
+  justify-content: center;
+}
+.contact article div form {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .contact article div form {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact article div form {
+    width: 40%;
+  }
+}
+.contact article div form * {
+  width: 100%;
+}
+.contact article div form input[type=submit] {
+  width: auto;
+}
+
+.contact-section input {
+  background-color: #f6e2e9;
+  border-radius: 5px;
+}
+.contact-section input:focus {
+  background-color: #f6e2e9;
+  border-radius: 5px;
+}
+.contact-section textarea {
+  background-color: #f6e2e9;
+  border-radius: 5px;
+}
+.contact-section textarea:focus {
+  background-color: #f6e2e9;
+  border-radius: 5px;
+}
+
+.widget-area .widget {
+  margin: 0;
+}
+
+.search-products {
+  max-width: 66.4989378333em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 2.617924em;
+  box-sizing: content-box;
+}
+.search-products .wp-block-search__input {
+  background-color: #f6e2e9;
+  border-radius: 6px;
+  padding: 1em;
+  color: #75465d;
+}
+.search-products .wp-block-search__input:focus {
+  background-color: #f6e2e9;
+}
+
 body h1, body h2, body h3 {
   font-family: Optima, sans serif;
 }
@@ -404,6 +537,9 @@ body .columns-4 {
   box-sizing: border-box;
   box-shadow: 0 4px 3px 0 #b389a0, 0 18px 40px 0 rgba(253, 229, 249, 0.828);
   border-radius: 10px;
+}
+body a:focus, body input:focus, body textarea:focus, body button:focus {
+  outline: none;
 }
 body main .content-area {
   border: 6px dotted #f7e8f7;

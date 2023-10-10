@@ -23,6 +23,11 @@ Version: 4.5.2
 @import "./scss-partials/contact-page";
 @import "./scss-partials/single-post";
 @import "./scss-partials/stores-page";
+@import "./scss-partials/stores-page";
+@import "./scss-partials/single-post";
+@import "./scss-partials/contact-page";
+@import "./scss-partials/product-page";
+@import "./scss-partials/search-products";
 
 body{
     h1, h2, h3{
@@ -43,13 +48,16 @@ body{
         box-shadow: 0 4px 3px 0 $boxShadow, 0 18px 40px 0 rgba(253, 229, 249, 0.828);
             border-radius: 10px;
     }
+    a:focus,input:focus,textarea:focus,button:focus
+        {
+            outline: none;
+        }
 main{
  
     .content-area{
         border: 6px dotted #f7e8f7;
         border-radius: 10px;
         padding: 2rem;
-       
     }
 
 .site-content{
@@ -66,7 +74,6 @@ main{
     div:nth-child(4) {
         display: none;
     }
-
 }
 }
 
@@ -75,8 +82,6 @@ main{
     background-color: $bg;
     width: 100%;
     color: $btnText;
-
-
     a{
         width: 100% !important;
         color: $btnText !important;
