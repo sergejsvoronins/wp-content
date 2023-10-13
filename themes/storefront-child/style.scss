@@ -33,7 +33,24 @@ body{
     h1, h2, h3{
         font-family: Optima, sans serif;
     }
-    
+    select {
+        background-color: $btnBorder !important;
+        border: 2px dotted rgb(249, 226, 249) !important;
+        color: aliceblue !important;
+        border-radius: 8% !important;
+        padding: 10px !important;
+    }
+    input[type="number"] {
+        background-color: $btnBorder !important;
+        border: 2px dotted rgb(249, 226, 249) !important;
+        color: aliceblue !important;
+        border-radius: 8% !important;
+        padding: 10px !important;
+
+        @include tablet{
+        font-size: 1.2em;
+        }
+    }
     .woocommerce-message, .woocommerce-info, .woocommerce-error, .woocommerce-noreviews, p.no-comments {
         background-color: $messageBg;
     }

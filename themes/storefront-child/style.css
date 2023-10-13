@@ -242,14 +242,6 @@ button .added_to_cart {
   padding: 10px !important;
 }
 
-.single-product div.product table.variations select {
-  background-color: #edced9 !important;
-  border: 2px dotted rgb(249, 226, 249) !important;
-  color: aliceblue !important;
-  border-radius: 8% !important;
-  padding: 10px !important;
-}
-
 .team-section {
   width: 100%;
   height: auto;
@@ -545,6 +537,25 @@ button .added_to_cart {
 
 body h1, body h2, body h3 {
   font-family: Optima, sans serif;
+}
+body select {
+  background-color: #edced9 !important;
+  border: 2px dotted rgb(249, 226, 249) !important;
+  color: aliceblue !important;
+  border-radius: 8% !important;
+  padding: 10px !important;
+}
+body input[type=number] {
+  background-color: #edced9 !important;
+  border: 2px dotted rgb(249, 226, 249) !important;
+  color: aliceblue !important;
+  border-radius: 8% !important;
+  padding: 10px !important;
+}
+@media screen and (min-width: 768px) {
+  body input[type=number] {
+    font-size: 1.2em;
+  }
 }
 body .woocommerce-message, body .woocommerce-info, body .woocommerce-error, body .woocommerce-noreviews, body p.no-comments {
   background-color: rgb(192, 137, 146);
