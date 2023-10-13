@@ -1,21 +1,31 @@
 @import "variables";
 @import "mixins";
 
-.button{
+button{
     border-radius: 5%;
+.button {
+   
     &:hover {
         box-shadow: 0px 0px 20px 8px $lighting;
     }
 }
-select{
-        background-color: $btnBorder;
-        border: 2px dotted rgb(249, 226, 249);
-        color: aliceblue;
-        border-radius: 8%;
-        padding: 10px;
-        
-      
+select {
+        background-color: $btnBorder !important;
+        border: 2px dotted rgb(249, 226, 249) !important;
+        color: aliceblue !important;
+        border-radius: 8% !important;
+        padding: 10px !important;
 }
 .added_to_cart{
     display:none;
+}
+}
+.woocommerce-ordering{
+    select {
+        background-color: $btnBorder !important;
+        border: 2px dotted rgb(249, 226, 249) !important;
+        color: aliceblue !important;
+        border-radius: 8% !important;
+        padding: 10px !important;
+    }
 }

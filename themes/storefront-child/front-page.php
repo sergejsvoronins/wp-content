@@ -46,6 +46,7 @@ get_header(); ?>
             ?>
         </section>
     </div>
+
     <!-- <?php
             // do_action('homepage');
             ?> -->

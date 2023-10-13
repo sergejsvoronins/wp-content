@@ -25,11 +25,15 @@
         }
         .store-image {
             width: 100%;
+            width: 300px;
+            
             @include tablet {
-                width: 50%;
+                width: 400px;
             }
             img {
-                height: 100%;
+                height: auto;
+                border-radius: 10px;
+                box-shadow: 0 4px 10px 0 $boxShadow, 0 6px 20px 0 $bg;
             }
         }
     }

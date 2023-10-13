@@ -20,20 +20,43 @@ Version: 4.5.2
 @import "./scss-partials/frontpage";
 @import "./scss-partials/button";
 @import "./scss-partials/team-section";
+@import "./scss-partials/contact-page";
+@import "./scss-partials/single-post";
 @import "./scss-partials/stores-page";
+@import "./scss-partials/stores-page";
+@import "./scss-partials/single-post";
+@import "./scss-partials/contact-page";
+@import "./scss-partials/product-page";
+@import "./scss-partials/search-products";
 
 body{
     h1, h2, h3{
         font-family: Optima, sans serif;
     }
-    
+    select {
+        background-color: $btnBorder !important;
+        border: 2px dotted rgb(249, 226, 249) !important;
+        color: aliceblue !important;
+        border-radius: 8% !important;
+        padding: 10px !important;
+    }
+    input[type="number"] {
+        background-color: $btnBorder !important;
+        border: 2px dotted rgb(249, 226, 249) !important;
+        color: aliceblue !important;
+        border-radius: 8% !important;
+        padding: 10px !important;
+
+        @include tablet{
+        font-size: 1.2em;
+        }
+    }
     .woocommerce-message, .woocommerce-info, .woocommerce-error, .woocommerce-noreviews, p.no-comments {
         background-color: $messageBg;
     }
     .storefront-breadcrumb {
         display: none;
     }
-    background-color: #ea8b8b;
     .woocommerce-info{
         background-color: rgb(230, 161, 172);
     }
@@ -42,13 +65,16 @@ body{
         box-shadow: 0 4px 3px 0 $boxShadow, 0 18px 40px 0 rgba(253, 229, 249, 0.828);
             border-radius: 10px;
     }
+    a:focus,input:focus,textarea:focus,button:focus
+        {
+            outline: none;
+        }
 main{
  
     .content-area{
         border: 6px dotted #f7e8f7;
         border-radius: 10px;
         padding: 2rem;
-       
     }
 
 .site-content{
@@ -65,16 +91,17 @@ main{
     div:nth-child(4) {
         display: none;
     }
-
 }
 }
 
-}
+
 .sub-menu li {
-    background-color: pink;
+    background-color: $bg;
     width: 100%;
-
+    color: $btnText;
     a{
         width: 100% !important;
+        color: $btnText !important;
     }
     }
+}
