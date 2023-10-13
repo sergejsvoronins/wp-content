@@ -388,14 +388,17 @@ button .added_to_cart {
 }
 .stores .store-single .store-image {
   width: 100%;
+  width: 300px;
 }
 @media screen and (min-width: 768px) {
   .stores .store-single .store-image {
-    width: 50%;
+    width: 400px;
   }
 }
 .stores .store-single .store-image img {
-  height: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px 0 #b389a0, 0 6px 20px 0 #f4dddd;
 }
 
 .stores .store-single {
@@ -426,14 +429,17 @@ button .added_to_cart {
 }
 .stores .store-single .store-image {
   width: 100%;
+  width: 300px;
 }
 @media screen and (min-width: 768px) {
   .stores .store-single .store-image {
-    width: 50%;
+    width: 400px;
   }
 }
 .stores .store-single .store-image img {
-  height: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px 0 #b389a0, 0 6px 20px 0 #f4dddd;
 }
 
 @media screen and (min-width: 1200px) {
